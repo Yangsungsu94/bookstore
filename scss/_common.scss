@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@mixin fullsize{
+    width:100%;
+}
+
+@mixin container{
+    width:60%;
+    margin: 0 auto;
+}
+
+header{
+    @include fullsize;
+}
+
+#head_area{
+    padding:1.2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(0,0%,100%,0);
+    border-bottom: 0.5px solid #dfdfdf;
+}
+
+#logo{
+    width:8rem;   
+}
+
+#logo>img{
+    width:8rem;
+}
+
+.ham{
+    display: none;
+    width:20px;
+    height:15px;
+    cursor: pointer;
+    position: relative;
+
+    &::before{
+        content:"";
+        width:100%;
+        height:2px;
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        left:0;
+    }
+
+    .ham_menu{
+        width:100%;
+        height:2px;
+        border-radius: 1px;
+        background-color:#333;
+        position: absolute;
+        left:0;
+        top:50%;
+        transform: translateY(-50%);
+    }
+
+    &::after{
+        content:"";
+        width:100%;
+        height:2px;
+        background-color: #333;
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav li{
+    padding-right:40px;
+}
+
+.nav a{
+    font-size: 1.6rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.login_btn{
+    cursor: pointer;
+    background-color: #333;
+    border-radius: 100px;
+    padding:7px 25px;
+    color:#fff;
+    font-size:1.2rem;
+}
+
+footer{
+    @include fullsize;
+}
+
+.platform_list{
+    width:24px;
+    height:24px;    
+
+    .sns_youtube{
+        background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-youtube.b399a84a750e221ded9fef98ddeca396.png");
+        text-indent: -9999em;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:100%;
+        display: block;
+    }
+}
+
+.platform_list{
+    width:24px;
+    height:24px;    
+
+    .sns_instar{
+        background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-instagram.ba9357bd6c1bb50854389e9f15f76d76.png");
+        text-indent: -9999em;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:100%;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
