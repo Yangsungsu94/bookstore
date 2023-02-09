@@ -1,57 +1,168 @@
 @charset "UTF-8";
 
-@import "reset","common";
+@import "reset", "common";
 
-#wrap{
+#wrap {
     @include fullsize;
 }
 
-.slide_benner_area{
-    width:100%;
-    height:820px;
-    padding:64px 0 0;
-    background: linear-gradient(#f8faff 60.5%,#f0f4ff 0);
+.slide_benner_area {
+    width: 100%;
+    height: 820px;
+    padding: 64px 0 0;
+    background: linear-gradient(#f8faff 60.5%, #f0f4ff 0);
 }
 
-.benner_img{
+.benner_img {
     height: 100%;
     background-image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/brand/main-bg.0c2e95bfd550759a46367d3abb3d05df.png');
     position: relative;
     max-width: 1200px;
-    margin:0 auto;
-    background-size:765px;
+    margin: 0 auto;
+    background-size: 765px;
     background-repeat: no-repeat;
     background-position: 96% 55%;
 }
 
-.benner_hline{
+.benner_hline {
     background-image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slogan.4c47e7658eb4f468e43253b57f8466b5.png');
-    color:transparent;
+    color: transparent;
     background-repeat: no-repeat;
-    height:250px;
-    background-size:346px;
+    height: 250px;
+    background-size: 346px;
     background-position: 50px 50px;
 }
 
-.benner_h2line{
+.benner_h2line {
     display: flex;
     align-items: center;
-    height:47px;
-    margin-top:310px;
-    margin-left:50px;
+    height: 47px;
+    margin-top: 370px;
+    margin-left: 50px;
     cursor: pointer;
 
-    .h2_logo_img{
-        width:60px;
+    .h2_logo_img {
+        width: 60px;
     }
 
-    .h2_logo_img>img{
-        width:100%;
+    .h2_logo_img>img {
+        width: 100%;
     }
 
-    .h2_logo_text>h2{
+    .h2_logo_text>h2 {
         font-size: 3rem;
         font-family: 'locus_sangsang';
+    }
+}
+
+#ani_slide {
+    @include fullsize;
+    overflow: hidden;
+    .slide_text_area {
+        @include fullsize;
+        margin-top: 6rem;
+        // overflow: hidden;
+
+        h2 {
+            text-align: center;
+            margin-top: 2.4rem;
+            font-size: 4.9rem;
+            line-height: 130%;
+            color: #242424;
+            font-weight: 700;
+        }
+
+        p {
+            text-align: center;
+            font-size: 2.2rem;
+            line-height: 160%;
+            color: #555;
+            margin-top: 2rem;
+        }
+    }
+
+    .animation_slide {
+        margin-top: 22rem;
+
+        img{
+            height:100%;
+        }
+        .slide{
+            width:100%;
+        }
+
+        .slide1 {
+            margin: -18rem 0 0;
+            animation: slideLeft 50s linear infinite alternate;
+
+            @keyframes slideLeft {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-1443px);
+                }
+            }
+        }
+
+        .slide2 {
+          
+            animation: slideLeft2 50s linear infinite alternate;
+
+            @keyframes slideLeft2 {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(1443px);
+                }
+            }
+            img{
+                float: right;
+            }
+        }
+
+        .slide3 {
+            animation: slideLeft3 50s linear infinite alternate;
+
+            @keyframes slideLeft3 {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-1443px);
+                }
+            }
+        }
+    }
+}
+
+#video_book{
+    @include fullsize;
+    background-color: #f7f7f7;;
+    padding:80px 0 120px;
+text-align: center;
+
+
+    .text_wrap{
+        margin-top: 6rem;
+
+        .video_text{
+            font-weight: 700;
+            font-size:4.9rem;
+            line-height: 130%;
+            color:#242424;
+            letter-spacing: -0.6;
+            font-family: "SpoqaHanSansNeo,Apple SD Gothic Neo,Malgun Gothic",sans-serif;
+        }
+
+        .video_text2{
+            font-size: 2.2rem;
+            line-height: 160%;
+            color:#555;
+            font-family: "SpoqaHanSansNeo";
+            letter-spacing:-0.6px;
+        }
     }
 }
 

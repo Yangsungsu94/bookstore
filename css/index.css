@@ -18,6 +18,12 @@ a {
 }
 
 @font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
   font-family: "ONE-Mobile-Title";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff") format("woff");
   font-weight: normal;
@@ -50,6 +56,10 @@ header {
   justify-content: space-between;
   background-color: hsla(0deg, 0%, 100%, 0);
   border-bottom: 0.5px solid #dfdfdf;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
 #logo {
@@ -119,41 +129,148 @@ header {
   cursor: pointer;
   background-color: #333;
   border-radius: 100px;
-  padding: 7px 25px;
+  padding: 10px 25px;
   color: #fff;
   font-size: 1.2rem;
+  border: none;
 }
 
 footer {
   width: 100%;
 }
 
-.platform_list {
-  width: 24px;
-  height: 24px;
+footer #footer_inner {
+  width: 60%;
+  margin: 0 auto;
+  padding: 35px 0;
 }
-.platform_list .sns_youtube {
-  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-youtube.b399a84a750e221ded9fef98ddeca396.png");
-  text-indent: -9999em;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  display: block;
+
+.footer_platform {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.footer_h1_area > h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #242424;
+}
+
+.platform > ul {
+  display: flex;
 }
 
 .platform_list {
   width: 24px;
   height: 24px;
 }
-.platform_list .sns_instar {
-  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-instagram.ba9357bd6c1bb50854389e9f15f76d76.png");
+.platform_list:not(:last-child) {
+  margin-right: 10px;
+}
+.platform_list .sns_youtube {
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-youtube.b399a84a750e221ded9fef98ddeca396.png");
   text-indent: -9999em;
-  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
   display: block;
+}
+.platform_list .sns_instar {
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-instagram.ba9357bd6c1bb50854389e9f15f76d76.png");
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  display: block;
+}
+.platform_list .facebook {
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-facebook.3a7b1d9f3faea84dcb6091c956639408.png");
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  display: block;
+  text-indent: -9999em;
+}
+.platform_list .sns_kakao {
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-kakaotalk.fa50e1326498ebcac6ba4a1e68f66882.png");
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  display: block;
+}
+.platform_list .sns_naver {
+  background-image: url("../img/naver.png");
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  display: block;
+}
+
+.look {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  font-size: 10px;
+  color: #a5a5a5;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.look img {
+  width: 12px;
+}
+
+.display {
+  display: none;
+}
+.display .dislist_1 {
+  display: flex;
+  margin-top: 10px;
+}
+.display .dislist_1 li {
+  color: #a5a5a5;
+}
+.display .dislist_1 li:not(:first-child) {
+  padding-left: 10px;
+}
+.display .dislist_2 {
+  display: flex;
+  margin-top: 5px;
+}
+.display .dislist_2 li {
+  color: #a5a5a5;
+}
+.display .dislist_2 li:not(:first-child) {
+  padding-left: 10px;
+}
+
+.server .services {
+  display: flex;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+.server .services li:not(:first-child) {
+  margin-left: 12px;
+}
+.server .services li a {
+  background-image: url(https://d3udu241ivsax2.cloudfront.net/v3/images/common/small-gray-arr.4f0a51f549bc24f1bcee05d95f6a97f6.png);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  font-size: 1.2rem;
+  color: #6f6f6f;
+  background-position: 100%;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.copy_name {
+  margin-top: 24px;
+  color: #6f6f6f;
 }
 
 #wrap {
@@ -191,7 +308,7 @@ footer {
   display: flex;
   align-items: center;
   height: 47px;
-  margin-top: 310px;
+  margin-top: 370px;
   margin-left: 50px;
   cursor: pointer;
 }
@@ -204,4 +321,99 @@ footer {
 .benner_h2line .h2_logo_text > h2 {
   font-size: 3rem;
   font-family: "locus_sangsang";
+}
+
+#ani_slide {
+  width: 100%;
+  overflow: hidden;
+}
+#ani_slide .slide_text_area {
+  width: 100%;
+  margin-top: 6rem;
+}
+#ani_slide .slide_text_area h2 {
+  text-align: center;
+  margin-top: 2.4rem;
+  font-size: 4.9rem;
+  line-height: 130%;
+  color: #242424;
+  font-weight: 700;
+}
+#ani_slide .slide_text_area p {
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 160%;
+  color: #555;
+  margin-top: 2rem;
+}
+#ani_slide .animation_slide {
+  margin-top: 22rem;
+}
+#ani_slide .animation_slide img {
+  height: 100%;
+}
+#ani_slide .animation_slide .slide {
+  width: 100%;
+}
+#ani_slide .animation_slide .slide1 {
+  margin: -18rem 0 0;
+  animation: slideLeft 50s linear infinite alternate;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1443px);
+  }
+}
+#ani_slide .animation_slide .slide2 {
+  animation: slideLeft2 50s linear infinite alternate;
+}
+@keyframes slideLeft2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1443px);
+  }
+}
+#ani_slide .animation_slide .slide2 img {
+  float: right;
+}
+#ani_slide .animation_slide .slide3 {
+  animation: slideLeft3 50s linear infinite alternate;
+}
+@keyframes slideLeft3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1443px);
+  }
+}
+
+#video_book {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 80px 0 120px;
+  text-align: center;
+}
+#video_book .text_wrap {
+  margin-top: 6rem;
+}
+#video_book .text_wrap .video_text {
+  font-weight: 700;
+  font-size: 4.9rem;
+  line-height: 130%;
+  color: #242424;
+  letter-spacing: -0.6;
+  font-family: "SpoqaHanSansNeo,Apple SD Gothic Neo,Malgun Gothic", sans-serif;
+}
+#video_book .text_wrap .video_text2 {
+  font-size: 2.2rem;
+  line-height: 160%;
+  color: #555;
+  font-family: "SpoqaHanSansNeo";
+  letter-spacing: -0.6px;
 }

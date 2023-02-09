@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YS_book</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,16 +20,15 @@
 
             <div id="logo">
                 <img src="img/logo.png" alt="logo">
-            </div>            
+            </div>
 
             <div class="nav">
                 <ul>
                     <li><a href="javascript:;">기업문의</a></li>
                     <li><a href="javascript:;">회사소개</a></li>
                     <li><a href="javascript:;">계정관리</a></li>
-                    <!-- <li><a href="javascript:;">로그인</a></li> -->
                 </ul>
-            
+
                 <div class="login_area">
                     <button class="login_btn">로그인</button>
                 </div>
@@ -40,47 +40,138 @@
         <div class="wrap_inner">
 
             <div class="slide_benner_area">
-                
+
                 <div class="benner_img">
                     <div class="benner_text">
                         <h1 class="benner_hline"></h1>
                         <div class="benner_h2line">
-                        <div class="h2_logo_img">
-                            <img src="img/logo.png" alt="logo">                            
-                        </div>                 
-                        
-                        <div class="h2_logo_text">
-                            <h2>YS_BOOK의 서재</h2>
+                            <div class="h2_logo_img">
+                                <img src="img/logo.png" alt="logo">
+                            </div>
+
+                            <div class="h2_logo_text">
+                                <h2>YS_BOOK의 서재</h2>
+                            </div>
                         </div>
-                    </div>
-                    
                     </div>
                 </div>
             </div>
 
+            <!-- <section>
+                <div id="drag_slide">
+                    일단대기
+                </div>
+            </section> -->
 
+            <section>
+                <div id="ani_slide">
 
+                    <div class="slide_text_area">
+                        <h2>
+                            당신을 기다리는
+                            <br>
+                            12만권의 도서
+                        </h2>
+
+                        <p>
+                            첫 달 무료 구독을 통해<br>
+                            어떤 도서가 있는지 확인해보세요
+                        </p>
+                    </div>
+
+                    <div class="animation_slide">
+                        <div class="slide0 slide1"><img src="img/slide1.png" alt="slide"></div>
+                        <div class="slide0 slide2"><img src="img/slide2.png" alt="slide"></div>
+                        <div class="slide0 slide3"><img src="img/slide3.png" alt="slide"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div id="video_book">
+                    <div class="text_wrap">
+                        <div class="video_text">
+                            오디오 드라마로 만나는 <br>
+                          
+                            베스트셀러
+                           
+                        </div>
+
+                        <div class="video_text2">
+                            휴남동 서점의 따뜻한 이야기를
+                            <br>
+                            일상에서 더 가깝게
+                        </div>
+                    </div>
+
+                    <div class="video_area">
+
+                    </div>
+                </div>
+            </section>
 
             <footer>
                 <div id="footer_inner">
+
                     <div class="footer_platform">
                         <div class="footer_h1_area">
                             <h1>(주)YS_BOOK</h1>
                         </div>
                         <div class="platform">
                             <ul>
-                                <li class="platform_list"><a href="https://www.youtube.com/channel/UC6bk8AaEXA1hBnGXcLyj1QQ" target="_blank" class="sns_youtube">유튜브</a></li>
-                                <li class="platform_list"><a href="https://www.instagram.com/millie_bookclub/" target="_blank" class="sns_instar">인스타</a></li>
-                                <li class="platform_list"><a href="" target="_blank" class="sns"></a></li>
-                                <li class="platform_list"><a href="" target="_blank" class="sns"></a></li>
-                                <li class="platform_list"><a href="" target="_blank" class="sns"></a></li>
+                                <li class="platform_list"><a
+                                        href="https://www.youtube.com/channel/UC6bk8AaEXA1hBnGXcLyj1QQ" target="_blank"
+                                        class="sns_youtube">유튜브</a></li>
+                                <li class="platform_list"><a href="https://www.instagram.com/millie_bookclub/"
+                                        target="_blank" class="sns_instar">인스타</a></li>
+                                <li class="platform_list"><a href="https://www.facebook.com/millie.co.kr/"
+                                        target="_blank" class="facebook">페이스북</a></li>
+                                <li class="platform_list"><a href="https://pf.kakao.com/_MhGhC" target="_blank"
+                                        class="sns_kakao">카카오</a></li>
+                                <li class="platform_list"><a href="https://post.naver.com/millietown" target="_blank"
+                                        class="sns_naver">네이버</a></li>
                             </ul>
                         </div>
                     </div>
+
+                    <button class="look">사업자 정보 펼쳐보기 <img src="img/down-arrow.png" alt="arrow"> </button>
+
+                    <div class="display">
+                        <ul class="dislist_1">
+                            <li>대표이사:김국진</li>
+                            <li>사업자등록번호 : 423-88-00370</li>
+                            <li>호스팅 제공자 : (주)YS_BOOK</li>
+                        </ul>
+
+                        <ul class="dislist_2">
+                            <li>통신판매업 신고번호 : 2016-서울마포-2012호</li>
+                            <li>주소 : 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</li>
+                        </ul>
+                    </div>
+
+                    <div class="server">
+                        <ul class="services">
+                            <li><a href="https://corp.millie.co.kr/policy/terms/?nav_hidden=y">이용약관</a></li>
+                            <li><a href="https://corp.millie.co.kr/policy/privacy/?nav_hidden=y">개인정보처리방침</a></li>
+                            <li><a href="https://corp.millie.co.kr/policy/youth/?nav_hidden=y">청소년보호정책</a></li>
+                            <li><a href="https://www.millie.co.kr/v3/customer?nav_hidden=y">고객센터</a></li>
+                            <li><a href="https://www.millie.co.kr/h4/b2b/">B2B문의</a></li>
+                            <li><a href="javascript:;">콘텐츠 제휴문의</a></li>
+                            <li><a href="https://www.millie.co.kr/v3/customer/download?nav_hidden=y">뷰어 다운로드</a></li>
+                            <li><a href="https://www.millie.town/">회사소개</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="copy_name">Copyright © 2022 YS_BOOK All Rights Reserved.</p>
+
                 </div>
+
             </footer>
         </div>
     </div>
+
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
