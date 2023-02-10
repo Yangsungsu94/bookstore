@@ -58,6 +58,7 @@
 #ani_slide {
     @include fullsize;
     overflow: hidden;
+
     .slide_text_area {
         @include fullsize;
         margin-top: 6rem;
@@ -84,11 +85,12 @@
     .animation_slide {
         margin-top: 22rem;
 
-        img{
-            height:100%;
+        img {
+            height: 100%;
         }
-        .slide{
-            width:100%;
+
+        .slide {
+            width: 100%;
         }
 
         .slide1 {
@@ -99,6 +101,7 @@
                 0% {
                     transform: translateX(0);
                 }
+
                 100% {
                     transform: translateX(-1443px);
                 }
@@ -106,18 +109,20 @@
         }
 
         .slide2 {
-          
+
             animation: slideLeft2 50s linear infinite alternate;
 
             @keyframes slideLeft2 {
                 0% {
                     transform: translateX(0);
                 }
+
                 100% {
                     transform: translateX(1443px);
                 }
             }
-            img{
+
+            img {
                 float: right;
             }
         }
@@ -129,6 +134,7 @@
                 0% {
                     transform: translateX(0);
                 }
+
                 100% {
                     transform: translateX(-1443px);
                 }
@@ -137,34 +143,223 @@
     }
 }
 
-#video_book{
+#video_book {
     @include fullsize;
-    background-color: #f7f7f7;;
-    padding:80px 0 120px;
-text-align: center;
+    background-color: #f7f7f7;
+    ;
+    padding: 80px 0 120px;
+    text-align: center;
 
 
-    .text_wrap{
+    .text_wrap {
         margin-top: 6rem;
 
-        .video_text{
+        .video_text {
             font-weight: 700;
-            font-size:4.9rem;
+            font-size: 4.9rem;
             line-height: 130%;
-            color:#242424;
+            color: #242424;
             letter-spacing: -0.6;
-            font-family: "SpoqaHanSansNeo,Apple SD Gothic Neo,Malgun Gothic",sans-serif;
+            font-family: "SpoqaHanSansNeo,Apple SD Gothic Neo,Malgun Gothic", sans-serif;
         }
 
-        .video_text2{
+        .video_text2 {
+            margin-top: 2.4rem;
             font-size: 2.2rem;
             line-height: 160%;
-            color:#555;
+            color: #555;
             font-family: "SpoqaHanSansNeo";
-            letter-spacing:-0.6px;
+            letter-spacing: -0.6px;
+        }
+    }
+
+    .video_area {
+        margin-top: 2.4rem;
+    }
+}
+
+#api {
+
+    background-color: #fff;
+    padding: 80px 0 50px;
+    @include fullsize;
+
+    .api_inner {
+
+        @include container;
+
+        .api_text {
+            margin-top: 6rem;
+            text-align: center;
+
+            .api_txt_1 {
+                font-size: 4.9rem;
+                line-height: 130%;
+                color: #242424;
+                font-weight: 700;
+                letter-spacing: -.01em;
+                margin-top: 2.4rem;
+                font-family: 'SpoqaHanSansNeo';
+            }
+
+            .api_txt_2 {
+                font-size: 2.2rem;
+                line-height: 160%;
+                color: #555;
+                font-weight: 700;
+                letter-spacing: -.6px;
+                margin-top: 2.4rem;                
+            }
+        }
+
+        .api_area {
+            margin: 3.2rem auto 6.4rem;
+            width:100%;           
+
+            .api_image {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                
+                
+                .api_p {
+                    width:100%;
+                    display: block;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 2.8rem;
+                    color: #242424;
+                    margin-top: 1.6rem;
+                    // padding: 0 2.4rem;
+
+                    
+                }       
+                .box{
+                    margin-top:2.4rem;
+                    width:13%;
+                    height:100%;
+                    // background-color: gray;  
+                    
+                    h3{
+                        margin-top:2rem;
+                        a{
+                            font-size: 1.6rem;
+                            color:black;
+                            text-align: left;
+                            max-height: 3em;
+                        }                    
+                    }
+
+                    h6{
+                            font-size:1.4rem;
+                            max-height:1.35em;
+                            color:#666;
+                            margin-top:0.3rem;                       
+                    }
+
+                    img{
+                        text-align: center;
+                        width:100%;
+                    }
+                }        
+            }
         }
     }
 }
 
+#info {
+    @include fullsize;
+    background-color: #ffeb60;
+    position: relative;
+
+    .info_inner {
+        @include container;
+        padding: 8rem 2.4rem 8.4rem;
+
+        .info_head {
+            font-weight: 700;
+            font-size: 49px;
+            line-height: 130%;
+            letter-spacing: -.01em;
+            color: #242424;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .qna_wrap {
+            margin-top: 6rem;
+
+            ul {
+                max-width: 920px;
+                margin: 0 auto;
+
+                li {
+                    position: relative;
+                    margin-top: 1.6rem;
+                    background-color: #fff;
+                    box-shadow: 10px 10px 40px rgb(0 0 0 / 10%);
+                    border-radius: 20px;
+                    padding: 22px 24px 24px;
+                    max-height: 25rem;
+                    cursor: pointer;
+
+                    .question {
+                        margin-top: -5px;
+                        user-select: none;
+
+                        &::before {
+                            content: "";
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png");
+                            background-size: 2.4rem;
+                            position: absolute;
+                            right: 2rem;
+                            top: 1.6rem;
+                        }
+
+                        &.user::before{   
+                            background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/up.a3240ab0ff41a500d14dcd11eef4de8e.png");
+                        }
+
+                        p {
+                            margin-right: 33px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 24px;
+                            letter-spacing: -.6px;
+                            color: #242424;
+                        }
+                    }
+
+                    .answer {
+                        padding-top: 16px;
+                        border-top: 1px solid #242424;
+                        margin-top: 18px;
+                        display: none;
+
+                        p {
+                            font-size: 1.6rem;
+                            line-height: 24px;
+                            letter-spacing: -.6px;
+                            color: #555;
+                            padding-top: 10px;
+
+                            b {
+                                font-size: 1.6rem;
+                                line-height: 24px;
+                                letter-spacing: -.6px;
+                                color: #555;
+                                padding-top: 10px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 

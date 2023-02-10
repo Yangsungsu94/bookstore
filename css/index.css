@@ -56,10 +56,13 @@ header {
   justify-content: space-between;
   background-color: hsla(0deg, 0%, 100%, 0);
   border-bottom: 0.5px solid #dfdfdf;
+  transition: background-color 0s;
+  transition-delay: 0.3s;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
+  z-index: 1;
 }
 
 #logo {
@@ -411,9 +414,172 @@ footer #footer_inner {
   font-family: "SpoqaHanSansNeo,Apple SD Gothic Neo,Malgun Gothic", sans-serif;
 }
 #video_book .text_wrap .video_text2 {
+  margin-top: 2.4rem;
   font-size: 2.2rem;
   line-height: 160%;
   color: #555;
   font-family: "SpoqaHanSansNeo";
   letter-spacing: -0.6px;
+}
+#video_book .video_area {
+  margin-top: 2.4rem;
+}
+
+#api {
+  background-color: #fff;
+  padding: 80px 0 50px;
+  width: 100%;
+}
+#api .api_inner {
+  width: 60%;
+  margin: 0 auto;
+}
+#api .api_inner .api_text {
+  margin-top: 6rem;
+  text-align: center;
+}
+#api .api_inner .api_text .api_txt_1 {
+  font-size: 4.9rem;
+  line-height: 130%;
+  color: #242424;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 2.4rem;
+  font-family: "SpoqaHanSansNeo";
+}
+#api .api_inner .api_text .api_txt_2 {
+  font-size: 2.2rem;
+  line-height: 160%;
+  color: #555;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  margin-top: 2.4rem;
+}
+#api .api_inner .api_area {
+  margin: 3.2rem auto 6.4rem;
+  width: 100%;
+}
+#api .api_inner .api_area .api_image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#api .api_inner .api_area .api_image .api_p {
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #242424;
+  margin-top: 1.6rem;
+}
+#api .api_inner .api_area .api_image .box {
+  margin-top: 2.4rem;
+  width: 13%;
+  height: 100%;
+}
+#api .api_inner .api_area .api_image .box h3 {
+  margin-top: 2rem;
+}
+#api .api_inner .api_area .api_image .box h3 a {
+  font-size: 1.6rem;
+  color: black;
+  text-align: left;
+  max-height: 3em;
+}
+#api .api_inner .api_area .api_image .box h6 {
+  font-size: 1.4rem;
+  max-height: 1.35em;
+  color: #666;
+  margin-top: 0.3rem;
+}
+#api .api_inner .api_area .api_image .box img {
+  text-align: center;
+  width: 100%;
+}
+
+#info {
+  width: 100%;
+  background-color: #ffeb60;
+  position: relative;
+}
+#info .info_inner {
+  width: 60%;
+  margin: 0 auto;
+  padding: 8rem 2.4rem 8.4rem;
+}
+#info .info_inner .info_head {
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #242424;
+  margin-bottom: 24px;
+  text-align: center;
+}
+#info .info_inner .qna_wrap {
+  margin-top: 6rem;
+}
+#info .info_inner .qna_wrap ul {
+  max-width: 920px;
+  margin: 0 auto;
+}
+#info .info_inner .qna_wrap ul li {
+  position: relative;
+  margin-top: 1.6rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 22px 24px 24px;
+  max-height: 25rem;
+  cursor: pointer;
+}
+#info .info_inner .qna_wrap ul li .question {
+  margin-top: -5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#info .info_inner .qna_wrap ul li .question::before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/down.ad6759519210e8ae0cf9c13157ede6b7.png");
+  background-size: 2.4rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.6rem;
+}
+#info .info_inner .qna_wrap ul li .question.user::before {
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/brand/up.a3240ab0ff41a500d14dcd11eef4de8e.png");
+}
+#info .info_inner .qna_wrap ul li .question p {
+  margin-right: 33px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  color: #242424;
+}
+#info .info_inner .qna_wrap ul li .answer {
+  padding-top: 16px;
+  border-top: 1px solid #242424;
+  margin-top: 18px;
+  display: none;
+}
+#info .info_inner .qna_wrap ul li .answer p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  color: #555;
+  padding-top: 10px;
+}
+#info .info_inner .qna_wrap ul li .answer p b {
+  font-size: 1.6rem;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  color: #555;
+  padding-top: 10px;
+  font-weight: bold;
 }
