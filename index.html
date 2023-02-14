@@ -382,23 +382,23 @@
                                         <div class="swiper-slide">
                                             <img src="img/menu1.png" alt="menu">
                                         </div>
-    
+
                                         <div class="swiper-slide">
                                             <video src="img/menu2.mp4" autoplay="autoplay" preload="auto" loop="loop"
                                                 muted="autoplay"></video>
                                         </div>
-    
+
                                         <div class="swiper-slide">
                                             <img src="img/menu3.png" alt="menu">
                                         </div>
-    
+
                                         <div class="swiper-slide">
                                             <img src="img/menu4.png" alt="menu">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
 
                         <div class="button_area">
 
@@ -426,13 +426,13 @@
                                     <br>
                                     <span>셀럽이 읽어주는 오디오북</span>
                                 </p>
-                                
+
                             </div>
 
                             <div class="swiper-pagination">
 
                             </div>
-                        </div>               
+                        </div>
                     </div>
                 </div>
 
@@ -661,6 +661,20 @@
                 },
             },
         });
+
+    </script>
+
+    <script>
+        function slide_swiper() {
+            var ysys = document.getElementsByClassName("b_wrap");
+            var swiper = document.getElementsByClassName("swiper-slide");
+
+            for (var i = 0; i < ysys.length; i++) {
+                if (swiper == 0) {
+                    (".swiper-slide").eq(i)
+                }
+            }
+        }
     </script>
 
 </body>
