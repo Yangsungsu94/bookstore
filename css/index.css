@@ -723,6 +723,33 @@ footer #footer_inner {
   vertical-align: top;
 }
 
+@keyframes phoneUp {
+  0% {
+    transform: translateY(40px) scale(0.9);
+  }
+  80% {
+    transform: translateY(6px) scale(1.06);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+.phoneUp_on1 {
+  animation: phoneUp 0.6s 1;
+}
+
+.phoneUp_on2 {
+  animation: phoneUp 0.7s 1;
+}
+
+.phoneUp_on3 {
+  animation: phoneUp 0.8s 1;
+}
+
+.phoneUp_on4 {
+  animation: phoneUp 0.5s 1;
+}
+
 #price {
   width: 100%;
   background-color: #ffeb60;
@@ -757,6 +784,7 @@ footer #footer_inner {
   display: flex;
   align-items: center;
   margin-top: 2.4rem;
+  justify-content: space-between;
 }
 #price .price_inner .much .much_list {
   display: flex;

@@ -208,8 +208,8 @@
             margin-top: 6rem;
             text-align: center;
             transform: translateY(100px);
-        transition: all 2s;
-        opacity: 0;
+            transition: all 2s;
+            opacity: 0;
 
             .api_txt_1 {
                 font-size: 4.9rem;
@@ -558,6 +558,40 @@
     }
 }
 
+// addClass
+
+@keyframes phoneUp {
+    0% {
+        transform: translateY(40px) scale(0.9);
+    }
+
+    80% {
+        transform: translateY(6px) scale(1.06);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.phoneUp_on1 {
+    animation: phoneUp 0.6s 1;
+}
+
+.phoneUp_on2 {
+    animation: phoneUp 0.7s 1;
+}
+
+.phoneUp_on3 {
+    animation: phoneUp 0.8s 1;
+}
+
+.phoneUp_on4 {
+    animation: phoneUp 0.5s 1;
+}
+
+// end
+
 #price {
     @include fullsize;
     background-color: #ffeb60;
@@ -593,7 +627,8 @@
             max-width: 1024px;
             display: flex;
             align-items: center;
-            margin-top:2.4rem;
+            margin-top: 2.4rem;
+            justify-content: space-between;
 
             .much_list {
                 display: flex;
@@ -789,8 +824,8 @@
         position: relative;
         padding: 7.4rem 0;
         transform: translateY(100px);
-            transition: all 2s;
-            opacity: 0;
+        transition: all 2s;
+        opacity: 0;
 
         .introduce {
 
@@ -1127,7 +1162,6 @@
         }
     }
 }
-
 
 
 

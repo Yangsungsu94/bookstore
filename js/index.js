@@ -120,43 +120,46 @@ $(function () {
 
 // height
 
-$(function(){
-    $('.benner_text').css("transform","translateY(0px)").css("opacity","1");
+$(function () {
+    $('.benner_text').css("transform", "translateY(0px)").css("opacity", "1");
     // $('.slide_text_area').css("transform","translateY(0px)").css("opacity","1");
-    $(window).scroll(function(){
+    $(window).scroll(function () {
 
         var ws = $(this).scrollTop();
 
-        if( ws > $("#ani_slide").offset().top - 700 ){
-            $('.slide_text_area').css("transform","translateY(0px)").css("opacity","1");
+        if (ws > $("#ani_slide").offset().top - 700) {
+            $('.slide_text_area').css("transform", "translateY(0px)").css("opacity", "1");
         }
 
-        if( ws > $("#video_book").offset().top - 700 ){
-            $('.text_wrap').css("transform","translateY(0px)").css("opacity","1");
+        if (ws > $("#video_book").offset().top - 700) {
+            $('.text_wrap').css("transform", "translateY(0px)").css("opacity", "1");
         }
 
-        if( ws > $("#api").offset().top - 700 ){
-            $('.api_text').css("transform","translateY(0px)").css("opacity","1");
-            
+        if (ws > $("#api").offset().top - 700) {
+            $('.api_text').css("transform", "translateY(0px)").css("opacity", "1");
         }
 
-        if( ws > $("#avg").offset().top - 700 ){
-            $('.avg_text').css("transform","translateY(0px)").css("opacity","1");
+        if (ws > $("#avg").offset().top - 700) {
+            $('.avg_text').css("transform", "translateY(0px)").css("opacity", "1");
+            $(".cord1 img").addClass("phoneUp_on1").css({ "opacity": "1" });
+            $(".cord2 img").addClass("phoneUp_on2").css({ "opacity": "1" });
+            $(".cord3 img").addClass("phoneUp_on3").css({ "opacity": "1" });
+            $(".cord4 img").addClass("phoneUp_on4").css({ "opacity": "1" });
         }
 
-        if( ws > $("#price").offset().top - 700 ){
-            $('.price_text_wrap').css("transform","translateY(0px)").css("opacity","1");
+        if (ws > $("#price").offset().top - 700) {
+            $('.price_text_wrap').css("transform", "translateY(0px)").css("opacity", "1");
         }
 
-        if( ws > $("#audio").offset().top - 700 ){
-            $('.audio_inner').css("transform","translateY(0px)").css("opacity","1");
+        if (ws > $("#audio").offset().top - 700) {
+            $('.audio_inner').css("transform", "translateY(0px)").css("opacity", "1");
         }
 
-        if( ws > $("#info").offset().top - 700 ){
-            $('.info_head').css("transform","translateY(0px)").css("opacity","1");
+        if (ws > $("#info").offset().top - 700) {
+            $('.info_head').css("transform", "translateY(0px)").css("opacity", "1");
         }
     });
-  });
+});
 
 // end
 
