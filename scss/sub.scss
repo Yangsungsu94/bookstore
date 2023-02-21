@@ -2,8 +2,13 @@
 
 @import "reset", "common", "index";
 
+* {
+    font-family: "Roboto", "Noto Sans KR", "PingFang SC", "Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic", sans-serif !important;
+}
+
 #wrap {
-    @include fullsize;    
+    @include fullsize;
+
 
     .wrap_inner {
         padding-top: 10rem;
@@ -116,6 +121,9 @@
             @include fullsize;
             margin-top: 2rem;
 
+            border-bottom: 1px solid #eaeaea;
+            padding: 0 0 1.8rem 0;
+
             .best_event_zone {
                 @include container;
                 display: flex;
@@ -147,14 +155,16 @@
 
                         li {
 
-                            &::after {
-                                content: "";
-                                display: inline-block;
-                                width: 2px;
-                                height: 2px;
-                                margin: 15px 0 0;
-                                background-color: #000;
-                                vertical-align: top;
+                            &:not(:first-child) {
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 2px;
+                                    height: 2px;
+                                    margin: 15px 0 0;
+                                    background-color: #000;
+                                    vertical-align: top;
+                                }
                             }
 
                             a {
@@ -171,13 +181,13 @@
                     display: flex;
                     align-items: center;
 
-                    .check{
-                        &::before{
-                            content:"";
+                    .check {
+                        &::before {
+                            content: "";
                             display: inline-block;
-                            width:2px;
-                            height:2px;
-                            margin:9px 4px 0;
+                            width: 2px;
+                            height: 2px;
+                            margin: 9px 4px 0;
                             background-color: #595959;
                             vertical-align: top;
                         }
@@ -187,35 +197,440 @@
 
                         a {
                             font-size: 1.4rem;
-                            line-height: 2.2rem;
+                            line-height: 2rem;
                             color: #595959;
                             padding: 0.5rem;
                             font-weight: 600;
                             margin-right: 5px;
                         }
 
-                        button{
-                            width:2rem;
-                            height:2rem;
+                        button {
+                            width: 2rem;
+                            height: 2rem;
                             background-size: 20px 20px;
-                            background-image:url("../img/plus@2x.png");
-                            border:none;
+                            background-image: url("../img/plus@2x.png");
+                            border: none;
                             border-radius: 50%;
                         }
 
-                        span{
+                        span {
                             content: "";
-                            display:inline-block;
-                            width:4px;
+                            display: inline-block;
+                            width: 4px;
                             height: 8px;
-                            margin:0 1.6rem;
-                            background-size:4px 8px;                            
-                            background-image:url("../img/backtic@2x.png");
+                            margin: 0 1.6rem;
+                            background-size: 4px 8px;
+                            background-image: url("../img/backtic@2x.png");
                         }
                     }
                 }
             }
         }
+
+        #book_list {
+            @include fullsize();
+            padding-top: 2rem;
+
+            .book_list_inner {
+                @include container;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        &:not(:first-child) {
+                            margin-left: 1rem;
+                        }
+
+                        img {
+                            width: 1.4rem;
+                            height: 1.3rem;
+
+                        }
+
+
+                        a {
+                            position: relative;
+                            font-size: 1.3rem;
+                            color: #767676;
+                            font-weight: 700;
+                            line-height: 1.4rem;
+
+                            &:not(:first-child) {
+
+                                ::after {
+                                    content: "";
+                                    background-image: url("../img/down_hover@2x.png");
+                                    display: inline-block;
+                                    width: 1.6rem;
+                                    height: 1.6rem;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    vertical-align: top;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #main_page {
+            @include fullsize;
+            padding-top: 4.2rem;
+
+
+            .main_page {
+                @include container;
+
+
+                .main_page_title_area {
+                    width: 100%;
+                    position: relative;
+
+                    .head_text {
+
+                        h1 {
+                            text-align: center;
+
+                            .head_text_sub {
+                                display: inline;
+                                position: relative;
+                                padding-right: 10px;
+                                color: #000;
+                                font-size: 24px;
+                                line-height: 42px;
+                                font-weight: 600;
+                                letter-spacing: -0.06em;
+                            }
+
+                            .head_text_main {
+                                display: inline;
+                                color: #000;
+                                font-size: 24px;
+                                line-height: 42px;
+                                font-weight: 800;
+                                letter-spacing: -0.1em;
+                            }
+                        }
+                    }
+
+                    .platform_button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+
+                        .platform_button_inner {
+
+                            .platform_button_show {
+
+
+                                button {
+
+                                    width: 4.2rem;
+                                    height: 4.2rem;
+                                    line-height: 40px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 50%;
+                                    background-position: center;
+                                    background-color: #fff;
+
+                                    img {
+
+                                        width: 1.4rem;
+                                        height: 1.4rem;
+                                        vertical-align: top;
+                                        margin-top: 1.3rem;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .detail_view_wrap {
+                    width: 100%;
+                    margin-top: 3rem;
+
+                    .detail_view_area {
+                        text-align: center;
+
+                        ul {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            li {
+                                min-width: 11.4rem;
+                                padding: 8px 10px;
+                                vertical-align: top;
+                                display: inline-block;
+                                border-radius: 10px;
+                                box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+
+                                a {
+                                    background: #fff;
+
+                                    .prod_type_on {
+                                        color: #5055b1;
+                                        font-weight: 700;
+                                        display: block;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        letter-spacing: -0.01em;
+                                    }
+
+                                    .prod_price_on {
+                                        color: #5055b1;
+                                        font-weight: 500;
+                                        display: block;
+                                        font-size: 12px;
+                                        line-height: 22px;
+                                        letter-spacing: -0.01em;
+                                    }
+
+                                    .prod_type {
+                                        display: block;
+                                        color: #595959;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        letter-spacing: -0.01em;
+                                    }
+
+                                    .prod_price {
+                                        display: block;
+                                        color: #595959;
+                                        font-size: 12px;
+                                        line-height: 18px;
+                                        letter-spacing: -0.01em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .detail_book_wrap {
+
+                    .detail_book_wrap_inner {
+
+                        .small_review {
+
+                            h3 {
+                                color: #000;
+                                font-size: 15px;
+                                line-height: 23px;
+                                letter-spacing: -0.01em;
+                                font-weight: 700;
+                            }
+
+                            .work {
+                                display: flex;
+                                margin-top: 2.1rem;
+                                color: #767676;
+                                font-size: 1.2rem;
+                                vertical-align: middle;
+                                font-weight: 500;
+
+                                a {
+                                    color: #767676;
+                                    font-size: 1.2rem;
+                                    vertical-align: middle;
+                                    margin: 0 1px 0 0;
+                                }
+                            }
+
+                            a {
+                                margin-top: 2.1rem;
+                                display: flex;
+                                align-items: center;
+
+                                .week_best {
+                                    display: inline-block;
+                                    position: relative;
+                                    max-width: 135px;
+                                    padding-left: 23px;
+                                    margin-right: 10px;
+                                    line-height: 22px;
+                                    letter-spacing: -0.01em;
+                                    font-weight: 700;
+                                    vertical-align: top;
+
+                                    p {
+                                        font-size: 17px;
+                                        color: #000;
+
+                                        &::before {
+                                            content: "";
+                                            display: block;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            width: 18px;
+                                            height: 18px;
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: 18px 18px;
+                                            background-image: url("https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_trophy@2x.png");
+                                        }
+                                    }
+                                }
+
+                                .lank {
+                                    display: inline-block;
+                                    flex: 1 0;
+                                    color: #292929;
+
+                                    // line-height: 19px;
+                                    letter-spacing: -0.01em;
+                                    vertical-align: top;
+
+                                    p {
+                                        font-size: 13px;
+                                        font-weight: 500;
+
+                                        span {
+                                            color: #000;
+                                            font-weight: 700;
+                                            font-size: 13px;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            .small_btn {
+                                margin-top: 30px;
+                                display: flex;
+
+                                .small_btn_left_area {
+                                    .score {
+                                        display: flex;
+                                        align-items: center;
+
+                                        img {
+
+                                            margin-right: 4px;
+                                            width: 2.4rem;
+                                            height: 2.4rem;
+                                        }
+
+                                        .star_score {
+                                            display: inline-block;
+                                            position: relative;
+                                            color: #4dac27;
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                            letter-spacing: -0.01em;
+                                            font-weight: 700;
+                                        }
+                                    }
+
+                                    .star {
+                                        margin: 0 2px;
+
+
+                                        span {
+                                            &::after {
+                                                content: "";
+                                                display: inline-block;
+                                                width: 18px;
+                                                height: 18px;
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                                background-size: 18px 18px;
+                                                background-image: url("../img/klover_@2x.png");
+                                            }
+                                        }
+                                    }
+
+                                    .reviwe_list {
+                                        display: inline-block;
+                                        margin-top: 3px;
+                                        color: #595959;
+                                        font-size: 12px;
+                                        line-height: 18px;
+                                        letter-spacing: -0.01em;
+
+                                        .val {
+                                            color: #000;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            letter-spacing: -0.01em;
+                                        }
+                                    }
+                                }
+
+                                .right_text {
+
+                                    .small_btn_right_area {
+                                        display: flex;
+                                        align-items: center;
+                                        flex-direction: column;
+                                        justify-content: center;
+
+                                        img{                                                                                    
+                                                width: 16px;
+                                                height: 16px;                                           
+                                        }
+
+                                        .vall {
+                                            color: #474c98;
+                                            padding-left: 0;                                                                      
+                                            margin-top: 6px;
+                                            font-size: 15px;
+                                            line-height: 23px;
+                                            letter-spacing: -0.01em;
+                                            font-weight: 700;                                           
+                                        }
+
+                                        .re_desc {
+                                            display: inline-block;
+                                            margin-top: 3px;
+                                            color: #595959;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            letter-spacing: -0.01em;
+
+                                            .val {
+                                                color: #000;
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                                letter-spacing: -0.01em;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        // addClass
+        .type_on {
+            color: #5055b1 !important;
+            font-weight: 700 !important;
+        }
+
+        // addClass end
+
+
+
+
+
+
+
+
+
 
 
 
