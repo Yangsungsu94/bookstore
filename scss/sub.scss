@@ -3,87 +3,232 @@
 @import "reset", "common", "index";
 
 #wrap {
-    @include fullsize;
-}
+    @include fullsize;    
 
-.wrap_inner{
-    padding-top:10rem;
+    .wrap_inner {
+        padding-top: 10rem;
 
-    #searching{
-        @include fullsize;
+        #searching {
+            @include fullsize;
 
-        .searching_inner{
-            @include container;
+            .searching_inner {
+                @include container;
 
-            .logo_searching{
                 display: flex;
-                .logo_area{
-                    
-                    img{
-                        width:8rem;
-                    }
-                }
+                justify-content: space-between;
 
-                .searching_area{
-                    width:56rem;
-                    height:4.8rem;
-                    padding-right:1.4rem;
-                    border-radius:2.5rem;
-                    background:#fff;
-                    border:1px solid #5055b1;
+                .logo_searching {
+                    display: flex;
 
-                    .all_searching{
+                    .logo_area {
 
-                        display: flex;
-                        justify-content: space-around;
-                        align-items: center;
-                        width:13.3rem;
-                        height:4.8rem;
-                        
-                        #sear_list{
-                            border:none;
-                            vertical-align: middle;                            
-                            appearance:none;
-                            background:none;
-                            // padding: 11px 16px 5px 24px;  
-                            color:#242424;
-                            font-size:1.5rem;
-                            font-weight: 700;
-                            margin-left:3rem;
-                            width:100%;
-                            // line-height: 10px;
-
-                            option{                                           
-                                min-height:1.2em;
-                                display: block;                                                                                         
-                            }
+                        img {
+                            width: 8rem;
                         }
+                    }
 
-                        #ys_button{                            
-                            position: relative;
-                            border-bottom:none;
-                            border-radius:2.4rem;
-                            background: none;
-                            transition: none;
-                            z-index:1;
+                    .searching_area {
+                        width: 56rem;
+                        height: 4.8rem;
+                        padding-right: 1.4rem;
+                        border-radius: 2.5rem;
+                        background: #fff;
+                        border: 1px solid #5055b1;
 
-                            .arrow_icon{                             
-                              
-                                position: absolute;
-                                right:21px;
-                                top:-8px;
-                                img{
-                                    width:6px;
-                                height:4px;
+                        .all_searching {
+
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            width: 13.3rem;
+                            height: 4.8rem;
+
+                            #sear_list {
+                                border: none;
+                                vertical-align: middle;
+                                appearance: none;
+                                background: none;
+                                // padding: 11px 16px 5px 24px;  
+                                color: #242424;
+                                font-size: 1.5rem;
+                                font-weight: 700;
+                                margin-left: 3rem;
+                                width: 100%;
+                                // line-height: 10px;
+
+                                option {
+                                    min-height: 1.2em;
+                                    display: block;
+                                }
+                            }
+
+                            #ys_button {
+                                position: relative;
+                                border-bottom: none;
+                                border-radius: 2.4rem;
+                                background: none;
+                                transition: none;
+                                z-index: 1;
+
+                                .arrow_icon {
+
+                                    position: absolute;
+                                    right: 21px;
+                                    top: -8px;
+
+                                    img {
+                                        width: 6px;
+                                        height: 4px;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+
+                .cart_mypage {
+                    display: flex;
+                    align-items: center;
+
+                    .cart_area {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        margin-right: 2.5rem;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+
+                    .my_page_area {
+                        width: 4.8rem;
+                        height: 4.8rem;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
             }
         }
+
+        #best_event {
+            @include fullsize;
+            margin-top: 2rem;
+
+            .best_event_zone {
+                @include container;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .ham_menu_area {
+
+                    display: flex;
+                    align-items: center;
+
+                    .ham_zone {
+
+                        button {
+                            background-image: url("../img/ham2x.png");
+                            width: 4.4rem;
+                            height: 4.4rem;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 44px 44px;
+                            border: none;
+                            background-color: transparent;
+                            cursor: pointer;
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+
+                        li {
+
+                            &::after {
+                                content: "";
+                                display: inline-block;
+                                width: 2px;
+                                height: 2px;
+                                margin: 15px 0 0;
+                                background-color: #000;
+                                vertical-align: top;
+                            }
+
+                            a {
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                                padding: 5px 14px;
+                                line-height: 29px;
+                            }
+                        }
+                    }
+                }
+
+                .sale_zone {
+                    display: flex;
+                    align-items: center;
+
+                    .check{
+                        &::before{
+                            content:"";
+                            display: inline-block;
+                            width:2px;
+                            height:2px;
+                            margin:9px 4px 0;
+                            background-color: #595959;
+                            vertical-align: top;
+                        }
+                    }
+
+                    li {
+
+                        a {
+                            font-size: 1.4rem;
+                            line-height: 2.2rem;
+                            color: #595959;
+                            padding: 0.5rem;
+                            font-weight: 600;
+                            margin-right: 5px;
+                        }
+
+                        button{
+                            width:2rem;
+                            height:2rem;
+                            background-size: 20px 20px;
+                            background-image:url("../img/plus@2x.png");
+                            border:none;
+                            border-radius: 50%;
+                        }
+
+                        span{
+                            content: "";
+                            display:inline-block;
+                            width:4px;
+                            height: 8px;
+                            margin:0 1.6rem;
+                            background-size:4px 8px;                            
+                            background-image:url("../img/backtic@2x.png");
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+
     }
 }
+
+
+
+
+
+
 
 
 
