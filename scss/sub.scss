@@ -3,7 +3,7 @@
 @import "reset", "common", "index";
 
 * {
-    font-family: "Roboto", "Noto Sans KR", "PingFang SC", "Apple SD Gothic Neo", "Microsoft YaHei UI", "Malgun Gothic", sans-serif !important;
+    font-family: 'Roboto', "SpoqaHanSansNeo,Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
 #wrap {
@@ -279,7 +279,7 @@
 
         #main_page {
             @include fullsize;
-            padding-top: 4.2rem;
+            padding: 4.2rem 0 15rem;
 
 
             .main_page_area {
@@ -326,9 +326,7 @@
 
                             .platform_button_show {
 
-
                                 button {
-
                                     width: 4.2rem;
                                     height: 4.2rem;
                                     line-height: 40px;
@@ -513,6 +511,7 @@
                                 .small_btn_left_area {
                                     .score {
                                         display: flex;
+                                        justify-content: center;
                                         align-items: center;
 
                                         img {
@@ -574,11 +573,11 @@
                                         display: flex;
                                         align-items: center;
                                         flex-direction: column;
-                                        justify-content: center;
+                                        justify-content: flex-start;
 
                                         img {
-                                            width: 24px;
-                                            height: 24px;
+                                            width: 16px;
+                                            height: 16px;
                                         }
 
                                         .vall {
@@ -659,13 +658,12 @@
                                                 vertical-align: top;
                                             }
                                         }
-
                                     }
 
                                     .table_price {
                                         margin-top: 2rem;
                                         display: flex;
-                                        border-bottom:1px solid #eaeaea;
+                                        border-bottom: 1px solid #eaeaea;
 
                                         .persent {
                                             display: inline-block;
@@ -690,13 +688,221 @@
                                         }
 
                                         .sale_price {
-                                            display: inline-block;                                            
+                                            display: inline-block;
                                             color: #767676;
                                             font-size: 14px;
                                             line-height: 47px;
                                             letter-spacing: -0.01em;
                                             vertical-align: bottom;
                                             text-decoration: line-through;
+                                        }
+                                    }
+                                }
+
+                                .mile {
+                                    padding: 18px 0 16px;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    border-bottom: 1px solid #eaeaea;
+
+                                    .mile_text {
+                                        p {
+                                            color: #000;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            letter-spacing: -0.01em;
+                                            font-weight: 700;
+                                            margin-right: 15px;
+                                        }
+                                    }
+
+                                    .mile_point {
+                                        display: flex;
+                                        align-items: center;
+
+                                        p {
+                                            display: inline-block;
+                                            color: #4dac27;
+                                            font-size: 15px;
+                                            line-height: 23px;
+                                            letter-spacing: -0.01em;
+                                            font-weight: 700;
+                                            vertical-align: top;
+                                            margin-right: 10px;
+                                        }
+                                    }
+
+                                    .mile_toggle {
+                                        background-image: url("https://contents.kyobobook.co.kr/resources/fo/images/common/ink/arw_tooltip@2x.png");
+                                        background-size: 22px 22px;
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                        width: 22px;
+                                        height: 22px;
+                                    }
+                                }
+
+                                .cj_box {
+                                    padding: 18px 0 16px;
+                                    border-bottom: 1px solid #eaeaea;
+
+
+                                    .cj_box1 {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        p {
+                                            color: #000;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                            font-weight: bold;
+
+                                        }
+
+                                        div {
+                                            color: #000;
+                                            font-size: 14px;
+                                            line-height: 17px;
+                                            margin: 0 0 0 5px;
+                                            font-weight: 700;
+                                            display: flex;
+
+                                            div {
+                                                background-image: url("https://contents.kyobobook.co.kr/resources/fo/images/common/ink/btn_tooltip_sm@2x.png");
+                                                width: 16px;
+                                                height: 16px;
+                                                // background-position: center;
+                                                background-size: 16px 16px;
+                                            }
+                                        }
+                                    }
+
+                                    .cj_box2 {
+                                        margin-top: 10px;
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        align-items: center;
+
+                                        p {
+                                            text-align: right;
+                                            color: #000;
+                                            font-size: 14px;
+                                            // line-height: 22px;
+                                            font-weight: 700;
+                                            margin: 0 5px 0 0;
+                                        }
+
+                                        div {
+                                            background-image: url("https://contents.kyobobook.co.kr/resources/fo/images/common/ink/btn_tooltop_question_sm@2x.png");
+                                            background-size: 16px 16px;
+                                            width: 16px;
+                                            height: 16px;
+                                        }
+                                    }
+
+                                    .cj_box3 {
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        margin-top: 10px;
+
+                                        color: #595959;
+                                        font-size: 12px;
+                                        line-height: 22px;
+
+                                        button {
+                                            margin: 0 0 0 5px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            background: #f2f2f2;
+                                            border-color: #ccc;
+                                            cursor: pointer;
+                                            border: 1px solid #ccc;
+                                            padding: 1px 5px 1px;
+                                            border-radius: 4px;
+                                            height: 24px;
+                                            font-size: 12px;
+                                            font-weight: 700;
+
+                                            img {
+                                                width: 6px;
+                                                height: 6px;
+                                                margin-left: 2px;
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .alram_area {
+                                    padding: 18px 0 16px;
+
+                                    .text_bth1 {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+
+                                        p {
+                                            display: inline-block;
+                                            // flex: 1;
+                                            color: #595959;
+                                            font-size: 13px;
+                                            line-height: 19px;
+                                            letter-spacing: -0.08em;
+                                            font-weight: 500;
+                                            vertical-align: top;
+                                        }
+
+                                        button {
+
+                                            border: 1px solid #5055b1;
+                                            background: #fff;
+                                            padding: 0 9px 0px;
+                                            height: 30px;
+                                            font-size: 12px;
+                                            letter-spacing: -0.01em;
+                                            font-family: "Noto Sans KR", sans-serif;
+                                            font-weight: 700;
+                                            color: #474c98;
+                                            cursor: pointer;
+
+                                            img {
+                                                width: 12px;
+                                                height: 18px;
+                                                vertical-align: top;
+                                            }
+                                        }
+                                    }
+
+                                    .btn100_zone {
+                                        margin-top: 15px;
+
+                                        button {
+                                            cursor: pointer;
+                                            width: 100%;
+                                            flex: 1;
+                                            background: #fff;
+                                            border: 1px solid #ccc;
+                                            padding: 10px 0;
+                                            font-size: 13px;
+                                            line-height: 19px;
+                                            border-radius: 6px;
+
+
+                                            img {
+                                                width: 12px;
+                                                height: 19px;
+                                                vertical-align: top;
+                                            }
+
+                                            span {
+                                                vertical-align: top;
+                                                color: #000;
+                                                font-size: 13px;
+                                                line-height: 19px;
+                                            }
                                         }
                                     }
                                 }
@@ -715,7 +921,228 @@
 
         // addClass end
 
+        // middle_Wrap
 
+        #middle_body {
+            @include fullsize;
+            position: relative;
+            border-bottom: 1px solid #eaeaea;
+
+            .detail_tap_menu {
+                @include container;
+
+                padding-bottom: 30px;
+
+                ul {
+                    display: flex;
+
+                    li {
+                        padding: 0 30px 0 0;
+                        // &:not(:first-child){
+                        //     margin-left:30px;
+                        // }
+
+                        a {
+                            position: relative;
+                            z-index: 1;
+                            display: block;
+                            width: 100%;
+                            color: #767676;
+                            font-size: 14px;
+                            line-height: 24px;
+                            letter-spacing: -0.01em;
+                            font-weight: 400;
+                            font-family: "Noto Sans KR", sans-serif;
+                            box-sizing: border-box;
+                            transition: all 0.3s ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        #middle_body_inner {
+            @include container;
+            padding-top: 8rem;
+            position: relative;
+            display: flex;
+
+            .middle_body_left_inner {
+                width: calc(100% - 330px - 56px);
+
+                .book_event {
+
+                    .event_text {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h2 {
+                            font-size: 1.8rem;
+                            font-weight: 800;
+                        }
+
+                        p {
+                            font-size: 1.3rem;
+                            color: #767676;
+                            letter-spacing: -0.06em;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .event_book_list {
+                        display: flex;
+                        margin-top: 1.5rem;
+
+                        .event_item {
+                            width: calc((100% - 50px)/3);
+
+                            &:not(:first-child) {
+                                margin-left: 10px;
+                            }
+
+                            img {
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+
+                            .event_info_box {
+                                margin-top: 1rem;
+
+                                h3 {
+                                    color: #000;
+                                    font-size: 13px;
+                                    max-height: 46px;
+                                    font-weight: 700;
+                                }
+
+                                p {
+                                    display: block;
+                                    margin-top: 6px;
+                                    color: #595959;
+                                    font-size: 12px;
+                                    line-height: 19px;
+                                    letter-spacing: -0.01em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #book_info {
+                    .book_info_inner {
+                        .book_info_inner_text {
+
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 7rem 0;
+
+                            h3 {
+                                font-size: 20px;
+                            }
+
+                            button {
+                                width: 4.2rem;
+                                height: 4.2rem;
+                                line-height: 40px;
+                                border: 1px solid #ccc;
+                                border-radius: 50%;
+                                background-position: center;
+                                background-color: #fff;
+
+                                img {
+
+                                    width: 1.4rem;
+                                    height: 1.4rem;
+                                    vertical-align: top;
+                                    margin-top: 1.3rem;
+
+                                }
+                            }
+                        }
+
+                        .book_info_slide {
+                                position: relative;
+
+                            .book_info_slide_inner {
+
+                                overflow: hidden;
+                                // position: relative;
+                                width: 100%;
+
+
+                                ul {
+                                    width: 3474px;
+
+
+                                    // width: calc((100% - 20px) * 10);
+                                    // display: flex;
+
+                                    li {
+                                        float: left;
+                                        width: 315px;
+
+                                        &:not(:first-child) {
+                                            margin: 0 18px;
+                                        }
+
+                                        border-radius: 20px;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            border-radius: 20px;
+                                        }
+
+
+                                    }
+                                }
+
+                                span {
+                                    position: absolute;
+                                    top: 50%;
+                                    display: block;
+                                    font-size: 38px;
+                                    color: #fff;
+                                    line-height: 40px;
+                                    background: rgba(0, 0, 0, 0.6);
+                                    cursor: pointer;
+                                    height: 50px;
+                                    transform: translateY(-50%);
+                                }
+
+                                .prev {
+                                    left: -20px;
+                                    text-align: center;
+                                    width:44px;
+                                    height:44px;
+                                    right:-20px;
+                                    border-radius: 50%;
+                                    opacity: 1;
+                                }
+
+                                .next {
+                                    text-align: center;
+                                    width:44px;
+                                    height:44px;
+                                    right:-20px;
+                                    border-radius: 50%;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .middle_body_right_inner {
+                width: 330px;
+                margin-left: 56px;
+                background-color: yellow;
+
+            }
+        }
 
 
 
@@ -730,6 +1157,9 @@
 
     }
 }
+
+
+
 
 
 
