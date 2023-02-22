@@ -282,7 +282,7 @@
             padding-top: 4.2rem;
 
 
-            .main_page {
+            .main_page_area {
                 @include container;
 
 
@@ -414,10 +414,14 @@
                 }
 
                 .detail_book_wrap {
+                    margin-top: 4rem;
 
                     .detail_book_wrap_inner {
+                        display: flex;
+                        justify-content: space-between;
 
                         .small_review {
+                            width: 30%;
 
                             h3 {
                                 color: #000;
@@ -572,19 +576,19 @@
                                         flex-direction: column;
                                         justify-content: center;
 
-                                        img{                                                                                    
-                                                width: 16px;
-                                                height: 16px;                                           
+                                        img {
+                                            width: 24px;
+                                            height: 24px;
                                         }
 
                                         .vall {
                                             color: #474c98;
-                                            padding-left: 0;                                                                      
+                                            padding-left: 0;
                                             margin-top: 6px;
                                             font-size: 15px;
                                             line-height: 23px;
                                             letter-spacing: -0.01em;
-                                            font-weight: 700;                                           
+                                            font-weight: 700;
                                         }
 
                                         .re_desc {
@@ -605,15 +609,103 @@
                                     }
                                 }
                             }
+                        }
 
+                        #swiper_area {
+                            width: 30%;
+                            position: relative;
+                            background-color: gray;
+                        }
+
+                        #table_zone {
+                            width: 30%;
+
+                            .table_zone_inner {
+
+                                .badge_list_box {
+
+                                    .badge_box {
+
+                                        color: #474c98;
+                                        border: 1px solid #474c98;
+                                        background: #fff;
+                                        text-align: center;
+                                        margin-right: 4px;
+                                        min-height: 22px;
+                                        padding: 1px 5px;
+                                        border-radius: 4px;
+                                        font-size: 14px;
+                                        line-height: 18px;
+                                        letter-spacing: -0.01em;
+
+                                        .badge_text {
+                                            vertical-align: top;
+                                        }
+
+                                        &:not(:first-child) {
+                                            color: #767676;
+                                            background: #fff;
+                                            border: 1px solid #ccc;
+                                            text-align: center;
+                                            margin-right: 4px;
+                                            min-height: 22px;
+                                            padding: 1px 5px;
+                                            border-radius: 4px;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            letter-spacing: -0.01em;
+
+                                            .badge_text {
+                                                vertical-align: top;
+                                            }
+                                        }
+
+                                    }
+
+                                    .table_price {
+                                        margin-top: 2rem;
+                                        display: flex;
+                                        border-bottom:1px solid #eaeaea;
+
+                                        .persent {
+                                            display: inline-block;
+                                            margin-right: 6px;
+                                            color: #4dac27;
+                                            font-size: 24px;
+                                            line-height: 36px;
+                                            letter-spacing: -0.01em;
+                                            font-weight: 700;
+                                            vertical-align: top;
+                                        }
+
+                                        .price_badge {
+                                            display: inline-block;
+                                            margin-right: 4px;
+                                            color: #000;
+                                            font-size: 24px;
+                                            line-height: 36px;
+                                            letter-spacing: -0.01em;
+                                            vertical-align: top;
+                                            font-weight: 600;
+                                        }
+
+                                        .sale_price {
+                                            display: inline-block;                                            
+                                            color: #767676;
+                                            font-size: 14px;
+                                            line-height: 47px;
+                                            letter-spacing: -0.01em;
+                                            vertical-align: bottom;
+                                            text-decoration: line-through;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
             }
         }
-
-
-
 
         // addClass
         .type_on {
@@ -638,6 +730,9 @@
 
     }
 }
+
+
+
 
 
 
