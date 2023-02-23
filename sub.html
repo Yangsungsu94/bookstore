@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="js/index.js"></script>
     <script src="js/sub.js"></script>
 
@@ -314,7 +315,25 @@
                                     </div>
 
                                     <div id="swiper_area">
-                                        1
+                                        <div class="swiper mySwiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img src="img/swiper1.jpg" alt="img">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    
+                                                    <img src="img/swiper2.jpg" alt="img">
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <img src="img/swiper.PNG" alt="img">
+                                                </div>
+                                              
+                                            </div>
+
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
                                     </div>
 
                                     <div id="table_zone">
@@ -400,20 +419,22 @@
                                                 <div class="text_bth1">
                                                     <p>알림 신청하시면 원하시는 정보를<br>
                                                         받아 보실 수 있습니다.</p>
-                                                    
+
                                                     <button>
                                                         <span>
-                                                         <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_alarm_on@2x.png" alt="bell"></span>
+                                                            <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_alarm_on@2x.png"
+                                                                alt="bell"></span>
 
                                                         알림신청
                                                     </button>
-                                                    
+
                                                 </div>
-                                            
+
                                                 <div class="btn100_zone">
                                                     <button>
-                                                        <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_locate@2x.png" alt="point">
-                                                        <span>매장 재고·위치</span>    
+                                                        <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_locate@2x.png"
+                                                            alt="point">
+                                                        <span>매장 재고·위치</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -428,7 +449,7 @@
 
             <section>
                 <div id="middle_body">
-            
+
                     <div class="detail_tap_menu">
                         <ul>
                             <li><a href="javascript:;">이벤트</a></li>
@@ -436,7 +457,7 @@
                             <li><a href="javascript:;">리뷰 (99)</a></li>
                             <li><a href="javascript:;">교환/반품/품절</a></li>
                         </ul>
-                    </div>                  
+                    </div>
                 </div>
             </section>
 
@@ -466,17 +487,17 @@
                                         <h3>『김미경의 마흔 수업』 출간 특별전</h3>
                                         <p>2023/02/15 ~ 2023/04/30</p>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                         </div>
 
                         <div id="book_info">
                             <div class="book_info_inner">
                                 <div class="book_info_inner_text">
-                                    <h3>북카드</h3>     
+                                    <h3>북카드</h3>
                                     <button>
                                         <img src="img/share@2x.png" alt="share">
-                                    </button>                               
+                                    </button>
                                 </div>
 
                                 <div class="book_info_slide">
@@ -499,7 +520,112 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
+
+                        <div id="sub_api_book">
+                            <div class="sub_api_book_inner">
+                                <div class="sub_api_book_text">
+                                    <h3>함께 구매한 책</h3>
+                                </div>
+
+                                <div class="sub_api_book_api">
+                                    <div class="api_box"></div>
+                                    <div class="api_box"></div>
+                                    <div class="api_box"></div>
+                                    <div class="api_box"></div>
+                                    <div class="api_box"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="big_img">
+                            <img src="img/bigimg.jpg" alt="img">
+                        </div>
+
+                        <div id="book_head_line">
+                            <div class="book_head_line">
+                                <div class="book_head_line_text">
+                                    <h2>책 소개</h2>
+                                    <p>이 책이 속한 분야</p>
+
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;">국내도서<span></span></a>
+                                            <a href="javascript:;">자기계발<span></span></a>
+                                            <a href="javascript:;">성공/처세<span></span></a>
+                                            <a href="javascript:;">자기관리/처세</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="book_long_text">
+                            <div class="book_long_text_inner">
+                                <div class="long_text">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="art_people">
+                            <div class="art_people_inner">
+                                <div class="art_people_text">
+                                    작가정보
+                                </div>
+
+                                <div class="art_people_info">
+                                    <div class="people_name">
+                                        <div class="people_name_heart">
+                                            <p>저자(글)</p>
+                                            <h2>김미경</h2>
+                                            <span></span>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="people_work">
+                                        <a href="javascript:;">
+                                            경영인/사업가
+                                        </a>
+
+                                        <a href="javascript:;">
+                                            자기계발/리더십컨설턴트
+                                        </a>
+                                    </div>
+
+                                    <div class="people_face">
+                                        <div class="profile">
+                                            <img src="img/face.jpg" alt="profile">
+                                        </div>
+
+                                        <div class="profile_text_content">
+                                            <div class="profile_text_inner">
+                                                <div class="profile_text">
+
+                                                </div>
+
+                                                
+                                            </div>
+
+                                            <div class="profile_text_button">
+                                                <button>
+                                                    <span class="b_text">펼치기</span>
+                                                    <span class="ico_arw"></span>
+                                                </button>
+                                            </div>
+                                            
+
+                                        </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
                     </div>
 
                     <div class="middle_body_right_inner">
@@ -565,6 +691,19 @@
             </footer>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // touchRatio: 0,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
