@@ -148,7 +148,7 @@ footer {
 }
 
 footer #footer_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding: 35px 0;
 }
@@ -433,7 +433,7 @@ footer #footer_inner {
   font-weight: 700;
 }
 #video_book .video_iframe {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
   margin: 0 auto;
@@ -472,7 +472,7 @@ footer #footer_inner {
   width: 100%;
 }
 #api .api_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #api .api_inner .api_text {
@@ -664,7 +664,7 @@ footer #footer_inner {
   background-color: #fff;
 }
 #leesoon .lee_wrap {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #leesoon .lee_wrap .lee_text_inner {
@@ -748,7 +748,7 @@ footer #footer_inner {
   padding: 80px 0 0;
 }
 #avg .avg_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #avg .avg_inner .avg_text h2 {
@@ -858,7 +858,7 @@ footer #footer_inner {
   background-color: #ffeb60;
 }
 #price .price_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding: 8rem 2% 10rem;
 }
@@ -1043,7 +1043,7 @@ footer #footer_inner {
   font-weight: 600;
 }
 #audio .audio_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   height: 900px;
   position: relative;
@@ -1268,7 +1268,7 @@ footer #footer_inner {
   height: 100%;
 }
 #interview .interview_inner .interview_wrap {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1329,7 +1329,7 @@ footer #footer_inner {
   position: relative;
 }
 #info .info_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding: 8rem 2.4rem 8.4rem;
 }

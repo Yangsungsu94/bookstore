@@ -619,7 +619,6 @@
                                 width: 100%;
                                 height: 100%;
 
-
                                 .swiper-slide {
                                     text-align: center;
                                     font-size: 18px;
@@ -959,6 +958,10 @@
             font-weight: 700 !important;
         }
 
+        .rota{
+            transform:rotateY(180deg)
+        }
+
         // addClass end
 
         // middle_Wrap
@@ -1113,7 +1116,7 @@
 
 
                                 ul {
-                                    width: 3474px;
+                                    width: 500%;
 
 
                                     // width: calc((100% - 20px) * 10);
@@ -1121,11 +1124,12 @@
 
                                     li {
                                         float: left;
-                                        width: 315px;
+                                        width: 10%;
+                                        padding: 10px;
 
-                                        &:not(:first-child) {
-                                            margin: 0 18px;
-                                        }
+                                        // &:not(:first-child) {
+                                        //     margin: 0 18px;
+                                        // }
 
                                         border-radius: 20px;
 
@@ -1386,8 +1390,9 @@
 
                             .people_face {
                                 display: flex;
+
                                 .profile {
-                                    margin-top:20px;
+                                    margin-top: 20px;
                                     width: 100px;
                                     height: 100px;
                                     border-radius: 50%;
@@ -1395,66 +1400,118 @@
                                     margin-right: 16px;
                                     text-align: center;
 
-                                    img{
-                                        width:100%;
+                                    img {
+                                        width: 100%;
                                     }
                                 }
 
-                                .profile_text_content{
-                                    
+                                .profile_text_content {
+
                                     flex: 1;
-                                    align-self: center;     
-                                    overflow: hidden;                                                             
+                                    align-self: center;
+                                    overflow: hidden;
 
-                                    .profile_text_inner{
-                                       
+                                    .profile_text_inner {
+
                                         max-height: 66px;
-                                        line-height: 22px;                                        
-                                        .profile_text{
+                                        line-height: 22px;
 
-                                            p{
+                                        .profile_text {
+
+                                            p {
+                                                // display: inline-block;
                                                 font-size: 15px;
                                                 color: #595959;
+                                                overflow: hidden;
+                                                white-space: nowrap;
+                                                text-overflow: ellipsis;
                                             }
-                                            
+
                                         }
+                                    }
 
-                                        .profile_text_button{
-                                            margin-top: 12px;
+                                    .profile_text_button {
+                                        
+                                        margin-top: 12px;
 
-                                            button{
-                                                display: inline-block;
-                                                box-sizing: border-box;
-                                                vertical-align: top;
+                                        button {
+                                            display: inline-block;
+                                            box-sizing: border-box;
+                                            vertical-align: top;
+                                            line-height: 20px;
+                                            background: none;
+                                            border: none;
+                                            cursor: pointer;
 
-                                                .b_text{
-                                                 
-                                                    vertical-align: top;
-                                                    display: inline-block;
-                                                    color: #767676;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: -0.01em;
-    text-align: left;
+                                            .b_text {
+                                                position: relative;
+                                                vertical-align: middle;
+                                                color: #767676;
+                                                font-size: 14px;
+                                                letter-spacing: -0.01em;
+                                                text-align: left;
+                                            }
+
+                                            .ico_arw {
+                                                width: 20px;
+                                                position: relative;
+
+                                                img {
+                                                    width: 20px;
+                                                    vertical-align: middle;
                                                 }
+
                                             }
                                         }
-                                       
                                     }
                                 }
+                            }
+
+
+                        }
+
+                        .swiper {
+                            width: 100%;
+                            height: 100%;
+                            margin-top: 2rem;                           
+
+                            .swiper-slide {
+                                text-align: center;
+                                font-size: 18px;
+                                // background: #fff;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;    
+                                flex-direction: column;
+                                
+                                h3{
+                                    
+                                    a{
+                                        font-size:16px; 
+                                    }
+                                   
+                                }
+                            
+                                .swiper-slide img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            .swiper-pagination {
+                                margin-top: 50px;
                             }
                         }
                     }
                 }
-
-
             }
 
             .middle_body_right_inner {
                 width: 330px;
                 margin-left: 56px;
                 background-color: yellow;
-
             }
         }
 
@@ -1473,16 +1530,6 @@
 
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

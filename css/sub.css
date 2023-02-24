@@ -149,7 +149,7 @@ footer {
 }
 
 footer #footer_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding: 35px 0;
 }
@@ -431,7 +431,7 @@ footer {
 }
 
 footer #footer_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding: 35px 0;
 }
@@ -716,7 +716,7 @@ footer #footer_inner {
   font-weight: 700;
 }
 #video_book .video_iframe {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
   margin: 0 auto;
@@ -755,7 +755,7 @@ footer #footer_inner {
   width: 100%;
 }
 #api .api_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #api .api_inner .api_text {
@@ -947,7 +947,7 @@ footer #footer_inner {
   background-color: #fff;
 }
 #leesoon .lee_wrap {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #leesoon .lee_wrap .lee_text_inner {
@@ -1031,7 +1031,7 @@ footer #footer_inner {
   padding: 80px 0 0;
 }
 #avg .avg_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #avg .avg_inner .avg_text h2 {
@@ -1141,7 +1141,7 @@ footer #footer_inner {
   background-color: #ffeb60;
 }
 #price .price_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding: 8rem 2% 10rem;
 }
@@ -1326,7 +1326,7 @@ footer #footer_inner {
   font-weight: 600;
 }
 #audio .audio_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   height: 900px;
   position: relative;
@@ -1551,7 +1551,7 @@ footer #footer_inner {
   height: 100%;
 }
 #interview .interview_inner .interview_wrap {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1612,7 +1612,7 @@ footer #footer_inner {
   position: relative;
 }
 #info .info_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding: 8rem 2.4rem 8.4rem;
 }
@@ -1708,7 +1708,7 @@ footer #footer_inner {
   width: 100%;
 }
 #wrap .wrap_inner #searching .searching_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -1794,7 +1794,7 @@ footer #footer_inner {
   padding: 0 0 1.8rem 0;
 }
 #wrap .wrap_inner #best_event .best_event_zone {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1876,7 +1876,7 @@ footer #footer_inner {
   padding-top: 2rem;
 }
 #wrap .wrap_inner #book_list .book_list_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #wrap .wrap_inner #book_list .book_list_inner ul {
@@ -1912,7 +1912,7 @@ footer #footer_inner {
   padding: 4.2rem 0 15rem;
 }
 #wrap .wrap_inner #main_page .main_page_area {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
 }
 #wrap .wrap_inner #main_page .main_page_area .main_page_title_area {
@@ -2458,13 +2458,16 @@ footer #footer_inner {
   color: #5055b1 !important;
   font-weight: 700 !important;
 }
+#wrap .wrap_inner .rota {
+  transform: rotateY(180deg);
+}
 #wrap .wrap_inner #middle_body {
   width: 100%;
   position: relative;
   border-bottom: 1px solid #eaeaea;
 }
 #wrap .wrap_inner #middle_body .detail_tap_menu {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding-bottom: 30px;
 }
@@ -2489,7 +2492,7 @@ footer #footer_inner {
   transition: all 0.3s ease-out;
 }
 #wrap .wrap_inner #middle_body_inner {
-  width: 60%;
+  width: 1200px;
   margin: 0 auto;
   padding-top: 8rem;
   position: relative;
@@ -2576,15 +2579,13 @@ footer #footer_inner {
   width: 100%;
 }
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_info .book_info_inner .book_info_slide .book_info_slide_inner ul {
-  width: 3474px;
+  width: 500%;
 }
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_info .book_info_inner .book_info_slide .book_info_slide_inner ul li {
   float: left;
-  width: 315px;
+  width: 10%;
+  padding: 10px;
   border-radius: 20px;
-}
-#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_info .book_info_inner .book_info_slide .book_info_slide_inner ul li:not(:first-child) {
-  margin: 0 18px;
 }
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_info .book_info_inner .book_info_slide .book_info_slide_inner ul li img {
   width: 100%;
@@ -2797,23 +2798,63 @@ footer #footer_inner {
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_inner .profile_text p {
   font-size: 15px;
   color: #595959;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_inner .profile_text_button {
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_button {
   margin-top: 12px;
 }
-#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_inner .profile_text_button button {
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_button button {
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
+  line-height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
-#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_inner .profile_text_button button .b_text {
-  vertical-align: top;
-  display: inline-block;
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_button button .b_text {
+  position: relative;
+  vertical-align: middle;
   color: #767676;
   font-size: 14px;
-  line-height: 20px;
   letter-spacing: -0.01em;
   text-align: left;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_button button .ico_arw {
+  width: 20px;
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .art_people_info .people_face .profile_text_content .profile_text_button button .ico_arw img {
+  width: 20px;
+  vertical-align: middle;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper .swiper-slide h3 a {
+  font-size: 16px;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper .swiper-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper .swiper-pagination {
+  margin-top: 50px;
 }
 #wrap .wrap_inner #middle_body_inner .middle_body_right_inner {
   width: 330px;

@@ -136,8 +136,7 @@ $(function () {
     $('.benner_text').css("transform", "translateY(0px)").css("opacity", "1");
     $(window).scroll(function () {
 
-        var ws = $(this).scrollTop();
-       
+        var ws = $(this).scrollTop();    
 
 
         if (ws > $("#ani_slide").offset().top - 700) {

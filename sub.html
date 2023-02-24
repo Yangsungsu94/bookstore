@@ -223,7 +223,7 @@
                                 <div class="platform_button_inner">
                                     <div class="platform_button_show">
                                         <button>
-                                            <img src="img/share@2x.png" alt="">
+                                            <img src="img/share@2x.png" alt="a">
 
                                         </button>
                                     </div>
@@ -320,15 +320,15 @@
                                                 <div class="swiper-slide">
                                                     <img src="img/swiper1.jpg" alt="img">
                                                 </div>
+
                                                 <div class="swiper-slide">
-                                                    
                                                     <img src="img/swiper2.jpg" alt="img">
                                                 </div>
 
                                                 <div class="swiper-slide">
                                                     <img src="img/swiper.PNG" alt="img">
                                                 </div>
-                                              
+
                                             </div>
 
                                             <div class="swiper-button-next"></div>
@@ -580,7 +580,7 @@
                                             <p>저자(글)</p>
                                             <h2>김미경</h2>
                                             <span></span>
-                                        </div>                                        
+                                        </div>
                                     </div>
 
                                     <div class="people_work">
@@ -603,22 +603,37 @@
                                                 <div class="profile_text">
 
                                                 </div>
-
-                                                
                                             </div>
 
                                             <div class="profile_text_button">
                                                 <button>
                                                     <span class="b_text">펼치기</span>
-                                                    <span class="ico_arw"></span>
+
+                                                    <span class="ico_arw">
+                                                        <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/btn_more_body@2x.png"
+                                                            alt="arrow">
+                                                    </span>
                                                 </button>
                                             </div>
-                                            
-
                                         </div>
-
-                                        
                                     </div>
+
+                                    <div class="swiper mySwiper2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                            <div class="swiper-slide api_h"></div>
+                                        </div>                                       
+                                    </div>
+
+                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
@@ -704,6 +719,19 @@
             },
         });
     </script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
 </body>
 
 </html>
