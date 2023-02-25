@@ -2662,7 +2662,6 @@ footer #footer_inner {
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #big_img img {
   width: 100%;
   border-radius: 20px;
-  display: none;
 }
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_head_line {
   margin: 7rem 0 3rem 0;
@@ -2843,6 +2842,9 @@ footer #footer_inner {
   align-items: center;
   flex-direction: column;
 }
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper .swiper-slide h3 {
+  margin-top: 1rem;
+}
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper .swiper-slide h3 a {
   font-size: 16px;
 }
@@ -2856,8 +2858,249 @@ footer #footer_inner {
 #wrap .wrap_inner #middle_body_inner .middle_body_left_inner #art_people .art_people_inner .swiper .swiper-pagination {
   margin-top: 50px;
 }
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list {
+  margin: 7rem 0 2rem 0;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 7rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .book_inner_text_wrap {
+  padding-bottom: 2rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .book_inner_text_wrap h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_wrap .over_flow_wrap_inner {
+  max-height: 180px;
+  overflow: hidden;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_wrap .over_flow_wrap_inner .over_flow_wrap_content p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_wrap .over_flow_wrap_inner .over_flow_wrap_content p b {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #595959;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_button {
+  margin-top: 1rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_button button {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  line-height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_button button .c_text {
+  position: relative;
+  vertical-align: middle;
+  color: #767676;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_button button .ico_arw2 {
+  width: 20px;
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list .over_flow_button button .ico_arw2 img {
+  width: 20px;
+  vertical-align: middle;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 {
+  margin: 7rem 0 2rem 0;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 7rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .book_inner_text_wrap2 {
+  padding-bottom: 2rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .book_inner_text_wrap2 h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_wrap2 .over_flow_wrap_inner2 {
+  max-height: 126px;
+  overflow: hidden;
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_wrap2 .over_flow_wrap_inner2 .over_flow_wrap_content2::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(180deg, transparent, #fff 15px);
+  position: absolute;
+  bottom: 0;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_wrap2 .over_flow_wrap_inner2 .over_flow_wrap_content2 p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_wrap2 .over_flow_wrap_inner2 .over_flow_wrap_content2 p b {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #595959;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_button2 {
+  margin-top: 1rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_button2 button {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  line-height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_button2 button .c_text2 {
+  position: relative;
+  vertical-align: middle;
+  color: #767676;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_button2 button .ico_arw22 {
+  width: 20px;
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list2 .over_flow_button2 button .ico_arw22 img {
+  width: 20px;
+  vertical-align: middle;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 {
+  margin: 7rem 0 2rem 0;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 7rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .book_inner_text_wrap3 {
+  padding-bottom: 2rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .book_inner_text_wrap3 h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_wrap3 .over_flow_wrap_inner3 {
+  max-height: 126px;
+  overflow: hidden;
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_wrap3 .over_flow_wrap_inner3 .over_flow_wrap_content3::after {
+  content: "";
+  width: 100%;
+  height: 15px;
+  background: linear-gradient(180deg, transparent, #fff 15px);
+  position: absolute;
+  bottom: 0;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_wrap3 .over_flow_wrap_inner3 .over_flow_wrap_content3 p {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_wrap3 .over_flow_wrap_inner3 .over_flow_wrap_content3 p b {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #595959;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_button3 {
+  margin-top: 1rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_button3 button {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  line-height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_button3 button .c_text3 {
+  position: relative;
+  vertical-align: middle;
+  color: #767676;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_button3 button .ico_arw3 {
+  width: 20px;
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_left_inner #book_inner_list3 .over_flow_button3 button .ico_arw3 img {
+  width: 20px;
+  vertical-align: middle;
+}
 #wrap .wrap_inner #middle_body_inner .middle_body_right_inner {
   width: 330px;
   margin-left: 56px;
-  background-color: yellow;
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner .children_slide {
+  position: relative;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner .children_slide .children_slide_text h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner .children_slide .swiper3_area {
+  margin-top: 1.5rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner .children_slide .swiper3_area .swiper {
+  width: 100%;
+  height: 100%;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner .children_slide .swiper3_area .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner .children_slide .swiper3_area .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api {
+  margin-top: 5rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_text p {
+  font-size: 20px;
+  font-weight: 700;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api {
+  margin-top: 1.5rem;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area {
+  display: flex;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area .column_api_inner_api_text {
+  text-align: center;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area .column_api_inner_api_text span {
+  margin-top: 5px;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area1 {
+  display: flex;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area2 {
+  display: flex;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area3 {
+  display: flex;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area4 {
+  display: flex;
+}
+#wrap .wrap_inner #middle_body_inner .middle_body_right_inner #column_api .column_api_inner .column_api_inner_api .column_api_inner_api_area4 .column_api_inner_api_text4 {
+  align-items: center;
 }

@@ -958,8 +958,8 @@
             font-weight: 700 !important;
         }
 
-        .rota{
-            transform:rotateY(180deg)
+        .rota {
+            transform: rotateY(180deg)
         }
 
         // addClass end
@@ -1138,8 +1138,6 @@
                                             height: 100%;
                                             border-radius: 20px;
                                         }
-
-
                                     }
                                 }
 
@@ -1237,7 +1235,6 @@
                     img {
                         width: 100%;
                         border-radius: 20px;
-                        display: none;
                     }
                 }
 
@@ -1431,7 +1428,7 @@
                                     }
 
                                     .profile_text_button {
-                                        
+
                                         margin-top: 12px;
 
                                         button {
@@ -1466,14 +1463,12 @@
                                     }
                                 }
                             }
-
-
                         }
 
                         .swiper {
                             width: 100%;
                             height: 100%;
-                            margin-top: 2rem;                           
+                            margin-top: 2rem;
 
                             .swiper-slide {
                                 text-align: center;
@@ -1481,17 +1476,18 @@
                                 // background: #fff;
                                 display: flex;
                                 justify-content: center;
-                                align-items: center;    
+                                align-items: center;
                                 flex-direction: column;
-                                
-                                h3{
-                                    
-                                    a{
-                                        font-size:16px; 
+
+                                h3 {
+                                    margin-top: 1rem;
+
+                                    a {
+                                        font-size: 16px;
                                     }
-                                   
+
                                 }
-                            
+
                                 .swiper-slide img {
                                     display: block;
                                     width: 100%;
@@ -1506,12 +1502,355 @@
                         }
                     }
                 }
+
+                #book_inner_list {
+                    margin: 7rem 0 2rem 0;
+                    border-bottom: 1px solid #eaeaea;
+                    padding-bottom: 7rem;
+
+                    .book_inner_text_wrap {
+                        padding-bottom: 2rem;
+
+                        h2 {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    .over_flow_wrap {
+
+                        .over_flow_wrap_inner {
+                            max-height: 180px;
+                            overflow: hidden;
+
+                            .over_flow_wrap_content {
+
+                                p {
+                                    font-size: 1.4rem;
+                                    line-height: 2.2rem;
+
+                                    b {
+                                        font-size: 1.4rem;
+                                        line-height: 2.2rem;
+                                        color: #595959;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+
+                    .over_flow_button {
+                        margin-top: 1rem;
+
+                        button {
+                            display: inline-block;
+                            box-sizing: border-box;
+                            vertical-align: top;
+                            line-height: 20px;
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+
+
+                            .c_text {
+                                position: relative;
+                                vertical-align: middle;
+                                color: #767676;
+                                font-size: 14px;
+                                letter-spacing: -0.01em;
+                                text-align: left;
+                            }
+
+                            .ico_arw2 {
+                                width: 20px;
+                                position: relative;
+
+                                img {
+                                    width: 20px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #book_inner_list2 {
+                    margin: 7rem 0 2rem 0;
+                    border-bottom: 1px solid #eaeaea;
+                    padding-bottom: 7rem;
+
+                    .book_inner_text_wrap2 {
+                        padding-bottom: 2rem;
+
+                        h2 {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    .over_flow_wrap2 {
+
+                        .over_flow_wrap_inner2 {
+                            max-height: 126px;
+                            overflow: hidden;
+                            position: relative;
+
+                            .over_flow_wrap_content2 {
+
+                                &::after {
+                                    content: "";
+                                    width: 100%;
+                                    height: 15px;
+                                    background: linear-gradient(180deg, transparent, #fff 15px);
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+
+                                p {
+                                    font-size: 1.4rem;
+                                    line-height: 2.2rem;
+
+                                    b {
+                                        font-size: 1.4rem;
+                                        line-height: 2.2rem;
+                                        color: #595959;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .over_flow_button2 {
+                        margin-top: 1rem;
+
+                        button {
+                            display: inline-block;
+                            box-sizing: border-box;
+                            vertical-align: top;
+                            line-height: 20px;
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+
+
+                            .c_text2 {
+                                position: relative;
+                                vertical-align: middle;
+                                color: #767676;
+                                font-size: 14px;
+                                letter-spacing: -0.01em;
+                                text-align: left;
+                            }
+
+                            .ico_arw22 {
+                                width: 20px;
+                                position: relative;
+
+                                img {
+                                    width: 20px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                #book_inner_list3 {
+                    margin: 7rem 0 2rem 0;
+                    border-bottom: 1px solid #eaeaea;
+                    padding-bottom: 7rem;
+
+                    .book_inner_text_wrap3 {
+                        padding-bottom: 2rem;
+
+                        h2 {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    .over_flow_wrap3 {
+
+                        .over_flow_wrap_inner3 {
+                            max-height: 126px;
+                            overflow: hidden;
+                            position: relative;
+
+                            .over_flow_wrap_content3 {
+
+                                &::after {
+                                    content: "";
+                                    width: 100%;
+                                    height: 15px;
+                                    background: linear-gradient(180deg, transparent, #fff 15px);
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+
+                                p {
+                                    font-size: 1.4rem;
+                                    line-height: 2.2rem;
+
+                                    b {
+                                        font-size: 1.4rem;
+                                        line-height: 2.2rem;
+                                        color: #595959;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .over_flow_button3 {
+                        margin-top: 1rem;
+
+                        button {
+                            display: inline-block;
+                            box-sizing: border-box;
+                            vertical-align: top;
+                            line-height: 20px;
+                            background: none;
+                            border: none;
+                            cursor: pointer;
+
+
+                            .c_text3 {
+                                position: relative;
+                                vertical-align: middle;
+                                color: #767676;
+                                font-size: 14px;
+                                letter-spacing: -0.01em;
+                                text-align: left;
+                            }
+
+                            .ico_arw3 {
+                                width: 20px;
+                                position: relative;
+
+                                img {
+                                    width: 20px;
+                                    vertical-align: middle;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .middle_body_right_inner {
                 width: 330px;
                 margin-left: 56px;
-                background-color: yellow;
+                // background-color: yellow;
+                position: relative;
+
+                .children_slide {
+                    position: relative;
+
+                    .children_slide_text {
+
+                        h2 {
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .swiper3_area {
+                        margin-top: 1.5rem;
+
+                        .swiper {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .swiper-slide {
+                            text-align: center;
+                            font-size: 18px;
+                            background: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .swiper-slide img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+
+                #column_api {
+                    margin-top: 5rem;
+
+                    .column_api_inner {
+
+                        .column_api_inner_text {
+                            p {
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .column_api_inner_api {
+                            margin-top: 1.5rem;
+
+                            .column_api_inner_api_area {
+                                display: flex;
+
+                                .column_api_inner_api_img_ {
+
+                                }
+
+                                .column_api_inner_api_text {
+                                    text-align: center;
+
+                                    span{
+                                        margin-top:5px;
+                                    }
+                                }
+                            }
+
+                            .column_api_inner_api_area1 {
+                                display: flex;
+
+                                .column_api_inner_api_img1_ {}
+
+                                .column_api_inner_api_text1 {}
+                            }
+
+                            .column_api_inner_api_area2 {
+                                display: flex;
+
+                                .column_api_inner_api_img2_ {}
+
+                                .column_api_inner_api_text2 {}
+                            }
+
+                            .column_api_inner_api_area3 {
+                                display: flex;
+
+                                .column_api_inner_api_img3_ {}
+
+                                .column_api_inner_api_text3 {}
+                            }
+
+                            .column_api_inner_api_area4 {
+                                display: flex;
+
+                                .column_api_inner_api_img4_ {}
+
+                                .column_api_inner_api_text4 {
+
+                                    align-items: center;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -1526,10 +1865,13 @@
 
 
 
-
-
     }
 }
+
+
+
+
+
 
 
 
