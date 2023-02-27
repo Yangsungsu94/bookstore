@@ -59,7 +59,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: hsla(0deg, 0%, 100%, 0.9);
+  background-color: hsla(0, 0%, 100%, 0.9);
   border-bottom: 0.5px solid #dfdfdf;
   transition: background-color 0s;
   transition-delay: 0.3s;
