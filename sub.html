@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="js/index.js"></script>
     <script src="js/sub.js"></script>
-
 </head>
 
 <body>
@@ -787,7 +786,6 @@
 
                                                     <input type="number" value="1" title="수량" class="input_button">
 
-
                                                     <button class="pl_button" name="opt1" id="opt1" value="16200"
                                                         onclick="car();">
                                                         <img src="https://dlwoduszz.github.io/book/subimg/plus.png"
@@ -1113,25 +1111,25 @@
     </script> -->
 
     <script>
-              var pirce_value=$('.fixed_count_btn').find('input');
-                                    var price_sum=$('.prod_info_price').find('.book_price');
-                                
-                                    $('.pl_button').click(function(){
-                                        if(pirce_value.val()>=100){
-                                            pirce_value.val()=100
-                                        }else{
-                                            pirce_value.val(parseInt(pirce_value.val()) + 1);
-                                            price_sum.html(Number(parseInt(pirce_value.val())*16200).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+' ')
-                                        }
-                                    });
-                                    $('.mi_button').click(function(){
-                                        if(pirce_value.val()<=1){
-                                            pirce_value.val()=1
-                                        }else{
-                                            pirce_value.val(parseInt(pirce_value.val()) - 1);
-                                            price_sum.html(Number(parseInt(pirce_value.val())*16200).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+' ')
-                                        }
-                                    })
+        var pirce_value = $('.fixed_count_btn').find('input');
+        var price_sum = $('.prod_info_price').find('.book_price');
+
+        $('.pl_button').click(function () {
+            if (pirce_value.val() >= 100) {
+                pirce_value.val() = 100
+            } else {
+                pirce_value.val(parseInt(pirce_value.val()) + 1);
+                price_sum.html(Number(parseInt(pirce_value.val()) * 16200).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' ')
+            }
+        });
+        $('.mi_button').click(function () {
+            if (pirce_value.val() <= 1) {
+                pirce_value.val() = 1
+            } else {
+                pirce_value.val(parseInt(pirce_value.val()) - 1);
+                price_sum.html(Number(parseInt(pirce_value.val()) * 16200).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' ')
+            }
+        })
 
     </script>
 </body>
