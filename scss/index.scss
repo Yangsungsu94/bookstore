@@ -2,6 +2,10 @@
 
 @import "reset", "common";
 
+#logo{
+    cursor: pointer;
+}
+
 #wrap {
     @include fullsize;
 }
@@ -29,8 +33,6 @@
         opacity: 0;
     }
 }
-
-
 
 .benner_hline {
     background-image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/brand/slogan.4c47e7658eb4f468e43253b57f8466b5.png');
@@ -225,6 +227,8 @@
 
         .video_frame {
             margin-top: 2.4rem;
+            width:730px;
+            height: 100%;
         }
     }
 }
@@ -1289,6 +1293,8 @@
                 top: -35px;
                 left: 60px;
                 z-index: 499;
+                margin:0;
+                border:none;
             }
 
             .interview_text_wrap {

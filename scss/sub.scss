@@ -6,9 +6,12 @@
     font-family: 'Roboto', "SpoqaHanSansNeo,Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
+#logo{
+    cursor: pointer;
+}
+
 #wrap {
     @include fullsize;
-
 
     .wrap_inner {
         padding-top: 10rem;

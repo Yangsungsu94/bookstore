@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
     <script src="js/sub.js"></script>
 </head>
 
@@ -24,7 +24,7 @@
                 <div class="ham_menu"></div>
             </div>
 
-            <div id="logo">
+            <div id="logo" onclick="location.href='/index.html'">
                 <img src="img/logo.png" alt="logo">
             </div>
 
@@ -643,9 +643,7 @@
 
                             <div class="over_flow_wrap">
                                 <div class="over_flow_wrap_inner">
-                                    <div class="over_flow_wrap_content">
-
-                                    </div>
+                                    <div class="over_flow_wrap_content"></div>
                                 </div>
 
                                 <div class="over_flow_button">
@@ -759,8 +757,7 @@
                                         </span>
 
                                         <span class="prod_info_price">
-                                            <span class="book_price" name="total" id="total" value="16200"
-                                                onclick="car();">
+                                            <span class="book_price" id="total">                                                
                                                 16,200
                                             </span>
 
@@ -769,25 +766,22 @@
                                             </span>
                                         </span>
                                     </div>
-
-                                    <!-- sample -->
-                            
-                                
                                     <!-- end -->
+
                                     <div class="buy_fixed_right">
                                         <div class="fixed_count">
                                             <div class="fixed_count_btn">
                                                 <span>
-                                                    <button class="mi_button" name="opt1" id="opt1" value="16200"
-                                                        onclick="car();">
+                                                    <button class="mi_button" name="opt1"  value="16200"
+                                                        >
                                                         <img src="https://contents.kyobobook.co.kr/resources/fo/images/common/ink/ico_spinner_down@2x.png"
                                                             alt="수량감소">
                                                     </button>
 
                                                     <input type="number" value="1" title="수량" class="input_button">
 
-                                                    <button class="pl_button" name="opt1" id="opt1" value="16200"
-                                                        onclick="car();">
+                                                    <button class="pl_button" name="opt1" value="16200"
+                                                       >
                                                         <img src="https://dlwoduszz.github.io/book/subimg/plus.png"
                                                             alt="수량증가">
                                                     </button>
@@ -909,7 +903,6 @@
 
                                     <div class="column_api_inner_api_area3">
                                         <div class="column_api_inner_api_img3 column_api_inner_api_img_">
-
                                         </div>
 
                                         <div class="column_api_inner_api_text3">
@@ -1091,25 +1084,6 @@
         });
     </script>
 
-    <!-- <script>
-
-    function car(){
-    
-    let basic_car=Number(document.getElementById("total").defaultValue);
-    
-    for(var i=1; i<=3; i++){
-    
-    const eleObj=document.getElementById("opt"+i);
-    
-    if(eleObj.checked) basic_car+=Number(eleObj.value);
-    
-    }   
-
-    document.getElementById("total").value=basic_car;
-    
-    }
-    </script> -->
-
     <script>
         var pirce_value = $('.fixed_count_btn').find('input');
         var price_sum = $('.prod_info_price').find('.book_price');
@@ -1130,8 +1104,8 @@
                 price_sum.html(Number(parseInt(pirce_value.val()) * 16200).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' ')
             }
         })
-
     </script>
+    
 </body>
 
 </html>

@@ -43,12 +43,12 @@ $.ajax({
     headers: { Authorization: "KakaoAK d37f4a4b153563c9647a2d78226dac2a" }
 })
 
-    .done(function (msg) {
-        var boxs = document.getElementsByClassName('swiper-slide');
+    .done(function (msg) {console.log(msg);
+        var boxs = document.querySelectorAll('.mySwiper2 .swiper-slide');
         for (var i = 0; i < boxs.length; i++) {
             var str = msg.documents[i].title;
             var str3 = msg.documents[i].price;
-
+            
             var str2 = str.substring(0, 20);
             $(".api_h").eq(i).append('<a href="#">' + "<img src='" + msg.documents[i].thumbnail + "'/>" + "</a>")
                 .append("<h3>" + '<a href="#">' + str2 + "</a>" + "</h3>")
@@ -208,7 +208,7 @@ $.ajax({
             $.ajax({
                 method: "GET",
                 url: "https://dapi.kakao.com/v3/search/book?target=title",
-                data: { query: "생각 레가토(큰글자도서)" },
+                data: { query: "생각" },
                 headers: { Authorization: "KakaoAK d37f4a4b153563c9647a2d78226dac2a" }
             })
             
@@ -356,13 +356,13 @@ $(function () {
 });
 
 $(function () {
-    $('.over_flow_button').click(function () {
+    $('.over_flow_button button').click(function () {
         console.log($(this).find('.c_text').text() === '펼치기')
         if ($(this).find('.c_text').text() === '펼치기') {
-            $(this).siblings().find('p').css({ 'overflow': 'visible','white-space': 'normal' });
+            $(this).siblings().children().find('.over_flow_wrap_content').css({ 'overflow': 'visible','white-space': 'normal' });
             $(this).find('.c_text').text('접기').siblings().find('img').css({ 'transform': 'rotate(180deg)' });
         } else if ($(this).find('.c_text').text() == '접기') {
-            $(this).siblings().find('p').css({ 'overflow': 'hidden','white-space': 'nowrap' });
+            $(this).siblings().children().find('.over_flow_wrap_content').css({ 'overflow': 'hidden','white-space': 'nowrap' });
             $(this).find('.c_text').text('펼치기').siblings().find('img').css({ 'transform': 'rotate(0deg)' });
         }
     });

@@ -564,6 +564,10 @@ footer #footer_inner {
   color: #6f6f6f;
 }
 
+#logo {
+  cursor: pointer;
+}
+
 #wrap {
   width: 100%;
 }
@@ -747,6 +751,8 @@ footer #footer_inner {
 }
 #video_book .video_iframe .video_frame {
   margin-top: 2.4rem;
+  width: 730px;
+  height: 100%;
 }
 
 #api {
@@ -1584,6 +1590,8 @@ footer #footer_inner {
   top: -35px;
   left: 60px;
   z-index: 499;
+  margin: 0;
+  border: none;
 }
 #interview .interview_inner .interview_wrap .interview_text_wrap {
   width: 400px;
@@ -1696,6 +1704,10 @@ footer #footer_inner {
 
 * {
   font-family: "Roboto", "SpoqaHanSansNeo,Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+#logo {
+  cursor: pointer;
 }
 
 #wrap {
