@@ -748,6 +748,7 @@ footer #footer_inner {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 #video_book .video_iframe .video_frame {
   margin-top: 2.4rem;
@@ -1582,6 +1583,7 @@ footer #footer_inner {
   top: 50%;
   transform: translate(60%, -60%);
   z-index: 501;
+  cursor: pointer;
 }
 #interview .interview_inner .interview_wrap .interview_ifr {
   width: 415px;
